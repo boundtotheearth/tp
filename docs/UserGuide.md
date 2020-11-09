@@ -1295,13 +1295,9 @@ The following walkthrough shows how you can clear all projects in Momentum
     
     ![ClearProject1](images/ClearProject1.png)
 
-3. The result box will display a message to indicate that all projects have been cleared.
+3. The result box will display a message to indicate that all projects have been cleared. You should no long see any projects in the displayed list.
 
     ![ClearProject2](images/ClearProject2.png)
-
-4. You should no long see any projects in the displayed list.
-
-    ![ClearProject3](images/ClearProject3.png)
 
 ### Viewing Help : `help`
 
