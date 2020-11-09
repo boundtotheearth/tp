@@ -1189,13 +1189,12 @@ The following walkthough uses a change in [sort type](#sort-projects-sort) to sh
 
 Done by Farrell Nah Jun Hao
 
-Momentum uses the data collected from your [timers](#time-tracking) to calculate statistics. These statistics are automatically generated and updated whenever you make any changes to your items, such as when you start or stop a new timer. These statistics can be seen in a panel on the left side of the window, as shown here:
+Momentum uses the data collected from your [timers](#time-tracking) to calculate statistics. These statistics are automatically generated and updated whenever you make any changes to your items, such as when you start or stop a new timer. They can be seen in a panel on the left side of the window, as shown here:
 
 ![StatisticsUI1](images/StatsUI1.png)
 Figure X: Location of the statistics panel
 
-The statistics displayed correspond to the projects or tasks currently shown in the displayed list, and will automatically
- change when the items in the displayed list changes (such as when you find specific projects or sort the list of projects).
+The order of the statistics displayed correspond to the items currently shown in the displayed list, and will automatically change when the items in the displayed list changes (such as when you [find specific items](#searching-for-items-find) or [sort the list of items](#sort-projects-sort)).
 
 ![StatisticsUI2](images/StatsUI2.png)
 Figure X: The order of the statistics entries matches the order in the displayed list.
@@ -1218,8 +1217,7 @@ Here are the statistics being tracked by Momentum:
 
 #### Time Spent Per Project
 
-This statistic tells you the total amount of time you have spent within the timeframe. For projects, this includes
- all the time you have spent on each individual task, as well as on the project as a whole.
+This statistic tells you the total amount of time you have spent within the timeframe. For projects, this includes all the time you have spent on each individual task, as well as on the project as a whole.
 
 ![StatsUISplit](images/StatsUISplit.png)
 Figure X: Sections of the statistics panel.
@@ -1227,6 +1225,7 @@ Figure X: Sections of the statistics panel.
 The statistics are displayed in 2 different formats:
 
 1. **Pie Chart**: Shows the relative time spent on each item. Useful for comparing different items. Items with less time spent on them may not be shown.
+
 2. **Table**: Shows the exact (in minutes) amount of time spent on each item. Useful for calculations.
 
 ### Settings
@@ -1234,39 +1233,45 @@ The statistics are displayed in 2 different formats:
 Done by Khoo De Hui
 
 Momentum allows you to change various settings so that you can make the application more suited to your preferences. Currently, the settings which you can adjust are:
-* The application GUI [theme](#user-interface-theme)
-* The [timeframe](#timeframes) of the statistics shown
+* The application [theme](#user-interface-theme).
+
+* The [timeframe](#timeframes) of the statistics shown.
 
 Format: `set [th/THEME] [st/TIMEFRAME]`
+
 * At least one of the optional fields must be provided.
-* There are two GUI themes available, Light and Dark. The keywords to apply them are:
+
+* There are two GUI themes available, Light and Dark. The parameters to apply them are:
   * `th/light`
   * `th/dark`
-* There are three available timeframes for statistics, daily, weekly and monthly. The keywords to apply them are:
+
+* There are three available timeframes for statistics, daily, weekly and monthly. The parameters to apply them are:
   * `st/daily`
   * `st/weekly`
   * `st/monthly`
 
-Example: `set th/light st/monthly`
 
-Result: Sets a light theme to the GUI and changes the statistics pane to show the time spent on projects within the month.
+The following walkthrough shows how you can change the theme and settings timeframe.
 
-#### Walkthrough of Changing Application Settings
-1. In order to set your GUI theme to light and your statistic timeframe to daily, type `set th/light th/monthly` in the command box and press the <kbd>Enter</kbd> key to execute it.
- ![Settings Walkthrough Step 1](images/SettingsDiagram1.png)
+1. In order to set your GUI theme to light and your statistic timeframe to monthly, type `set th/light th/monthly` in the command box and press the <kbd>Enter</kbd> key to execute it.
+
+   ![Settings Walkthrough Step 1](images/SettingsDiagram1.png)
+
 2. The result box will display a message to indicate that your command has been executed successfully.
- ![Settings Walkthrough Step 2](images/SettingsDiagram2.png)
-3. Your GUI has now been set to the light theme, and information in your statistics panel has been updated.
- ![Settings Walkthrough Step 3](images/SettingsDiagram3.png)
 
-### Clear All items : `clear`
+   ![Settings Walkthrough Step 2](images/SettingsDiagram2.png)
+
+3. Your GUI has now been set to the light theme, and information in your statistics panel has been updated.
+
+   ![Settings Walkthrough Step 3](images/SettingsDiagram3.png)
+
+### Clear All Items : `clear`
 
 Done by Farrell Nah Jun Hao
 
 When you are viewing all projects, this command deletes all the projects in Momentum, including their tasks.
 
-When you are viewing a specific project's tasks, this command will delete all the tasks in the project. The project
- itself will not be deleted.
+When you are viewing a specific project's tasks, this command will delete all the tasks in the project. The project itself will not be deleted.
 
 <div markdown="block" class="alert alert-danger">
 :warning:
@@ -1280,32 +1285,36 @@ Please be careful when using this command, as you may loose large amounts of you
 
 Format: `clear`
 
-#### Walkthrough of clearing Projects
-Suppose that you would like to clear all the projects in Momentum.
+The following walkthrough shows how you can clear all projects in Momentum
 
-1. Ensure that you are viewing all projects
+1. Ensure that you are viewing all projects.
 
     ![ClearProject0](images/ClearProject0.png)
     
-2. Type `clear` into the command box and press <kbd>Enter</kbd>
+2. Type `clear` into the command box and press <kbd>Enter</kbd>.
     
     ![ClearProject1](images/ClearProject1.png)
 
-3. The result box will display a message to indicate that all projects have been cleared. You should no long see any projects in the displayed list.
+3. The result box will display a message to indicate that all projects have been cleared.
 
     ![ClearProject2](images/ClearProject2.png)
+
+4. You should no long see any projects in the displayed list.
+
+    ![ClearProject3](images/ClearProject3.png)
 
 ### Viewing Help : `help`
 
 Shows a message explaning how to access the help page.
 
 ![help message](images/helpMessage.png)
+Figure X: The help window
 
 Format: `help`
 
 ### Exiting the Program : `exit`
 
-All project, task and timer data are saved automatically after every command. There is no need to save manually.
+All project, task and timer information are saved automatically after every command. There is no need to save manually.
 
 You can find the saved data in the following file in the same location where Momentum is located: `data/projectbook.json`
 
@@ -1323,19 +1332,24 @@ Result: Exits the program.
 **Q**: Momentum is showing "Dates and Times should be in ISO8601 format. e.g. 2020-09-23T16:55:12". Whats wrong? <br>
 **A**: You have entered a date and/or time in the wrong format. Please refer to the [date and time terms](#date-and-time-terms) for the correct format to use.
 
-**Q**: Momentum showing "Unknown Command". Whats wrong? <br>
-**A**: You have entered a command that is not recognised by Momentum. Please refer to [command summary](#command-summary) for a list of commands that you can enter into Momentum.
+**Q**: Momentum is showing "Unknown Command". Whats wrong? <br>
+**A**: You have entered a command that is not recognised by Momentum. Please refer to the [command summary](#command-summary) for a list of commands that you can enter into Momentum.
 
 --------------------------------------------------------------------------------------------------------------------
 
 ## Glossary
 
-* **Theme**: Colour scheme of the application
-* **Command Line Interface(CLI)**: Command Line Interface processes commands in the form of text
+* **Command Line Interface(CLI)**: Command Line Interface processes commands in the form of text.
+
 * **Mainstream OS**: Windows, Linux, Unix, OS-X
-* **Window**: The area of your computer's screen that displays the [user interface](#user-interface-overview) of Momentum
+
 * **Project View**: View all projects in the project book.
+
 * **Task View**: View all tasks that are added to a single project.
+
+* **Theme**: Colour scheme of the application.
+
+* **Window**: The area of your computer's screen that displays the [user interface](#user-interface-overview) of Momentum.
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -1343,21 +1357,21 @@ Result: Exits the program.
 
 Action | Format | Example
 --------|-------|-----------
-**View Tasks in a Project**| `view ID` |`view 3`
-**View all Projects**| `home` | -
+**Clearing all Items** | `clear` | -
 **Creating an Item** | `add n/NAME [d/DESCRIPTION] [c/] [dd/DEADLINE_DATE [dt/DEADLINE_TIME]] [r/REMINDER_DATE_TIME] [t/TAG]​`|  `project n/Momentum d/CS2103T Team Project dd/2021-12-07 t/impt`
-**Editing an Item** | `edit ID [n/NAME] [d/DESCRIPTION] [c/]  [dd/DEADLINE_DATE [dt/DEADLINE_TIME]] [r/REMINDER_DATE_TIME] [t/TAG]`| `edit 3 n/NewMomentum d/NewDescription dd/2021-12-07 r/2021-12-07T01:21:21 t/normal`
-**Delete an Item** | `delete ID` | `delete 3`
-**Clear all Items** | `clear` | -
-**Find an Item** | `find [match/FILTER_TYPE] [n/NAME [MORE_NAMES]...] [d/DESCRIPTION [MORE_DESCRIPTIONS]...] [t/TAG [MORE_TAGS]...]  [c/COMPLETION_STATUS]`  | `find match/any n/Momentum d/new t/normal`
-**Show all Items (after find)** | `list` | -
-**Sort Items** | `sort [type/SORT_TYPE] [order/SORT_ORDER] [c/]` | `sort type/deadline order/dsc c/`
-**Start Timer** | `start ID` | `start 2`
-**Stop Timer** | `stop ID` | `stop 2`
+**Deleting an Item** | `delete ID` | `delete 3`
 **Dismissing a Reminder** | `dismiss` | -
-**Showing and Hiding Tags** | `show t/` | -
-**Undo** | `undo` | -
-**Redo** | `redo` | -
+**Editing an Item** | `edit ID [n/NAME] [d/DESCRIPTION] [c/]  [dd/DEADLINE_DATE [dt/DEADLINE_TIME]] [r/REMINDER_DATE_TIME] [t/TAG]`| `edit 3 n/NewMomentum d/NewDescription dd/2021-12-07 r/2021-12-07T01:21:21 t/normal`
+**Exiting** | `exit` | -
 **Help** | `help` | -
+**Redoing** | `redo` | -
+**Searching for an Item** | `find [match/FILTER_TYPE] [n/NAME [MORE_NAMES]...] [d/DESCRIPTION [MORE_DESCRIPTIONS]...] [t/TAG [MORE_TAGS]...]  [c/COMPLETION_STATUS]`  | `find match/any n/Momentum d/new t/normal`
 **Settings** | `set [th/THEME] [st/TIMEFRAME]` | `set th/dark st/daily`
-**Exit** | `exit` | -
+**Showing all Items (after find)** | `list` | -
+**Showing and Hiding Tags** | `show t/` | -
+**Sorting Items** | `sort [type/SORT_TYPE] [order/SORT_ORDER] [c/]` | `sort type/deadline order/dsc c/`
+**Starting Timers** | `start ID` | `start 2`
+**Stopping Timers** | `stop ID` | `stop 2`
+**Undoing** | `undo` | -
+**Viewing all Projects**| `home` | -
+**Viewing Tasks in a Project**| `view ID` |`view 3`
