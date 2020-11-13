@@ -14,7 +14,7 @@ title: User Guide
 
 Attention all freelancers, here is an application you have always wanted, but never got to experience!
 
-We freelancers are always busy managing multiple projects at once. On top of that, each project comes with its own tasks and deadlines. This list is endless, but sadly, our brain capacity is exhausive.
+We freelancers are always busy managing multiple projects at once. On top of that, each project comes with its own tasks and deadlines. This list is endless, but sadly, our brain capacity is exhaustive.
 
 As freelancers ourselves, we understand. We too have had times where we woke up feeling fresh, before realising (with a shiver down our spine) that we have completely forgotten about a certain project deadline. 
 
@@ -601,7 +601,7 @@ The following walkthrough shows how you can sort projects in Momentum by specify
 
     ![Deadline Sort 1](images/DeadlineSort1.png)
 
-    Note that the projects are not sorted in asceding deadline order.
+    Note that the projects are not sorted in ascending deadline order.
 
 2. The result box will display a message to indicate that the command has been executed successfully.
 
@@ -801,7 +801,7 @@ So far, you have learnt how to search for items that contain multiple parameters
 
 Momentum makes it extremely easy for you to do that. 
 
-To make such a search, all you need to do is add all the prefixes you would like to search for in a single find command. You can think of this as combining mulitple find commands together. For example, if you would like to search for items that contain either `certification` in their name or `discussion` in their description, you can do so by searching using the command `find n/certification d/discussion`.
+To make such a search, all you need to do is add all the prefixes you would like to search for in a single find command. You can think of this as combining multiple find commands together. For example, if you would like to search for items that contain either `certification` in their name or `discussion` in their description, you can do so by searching using the command `find n/certification d/discussion`.
 
 The following walkthrough shows you can use the find command to search for projects that contain either `certification` in their name or `discussion` in their description.
 
@@ -901,7 +901,7 @@ The possibilities of using match type to enhance your searches are limitless. He
 
 1. If you have many items and want to find a specific one, you can use `match/all` to narrow down your search results.
 
-2. If you have many items and want to find those that are not part of a certain category, you can use `match/none` to narrrow down your search results.
+2. If you have many items and want to find those that are not part of a certain category, you can use `match/none` to narrow down your search results.
 
 #### 5.1.8. Viewing All Projects/Tasks: `list`
 
@@ -1045,7 +1045,7 @@ Done by Cheong Ying Yi Clara
 
 * If you missed a reminder, it will be greyed out in the item.
 
-* You can refer to [Creating a Project](#513-creating-a-projecttask-add) for more details on how you can add a reminder.
+* You can refer to [Creating a Project/Task](#513-creating-a-projecttask-add) for more details on how you can add a reminder.
 
 #### 5.3.1. Dismissing a Reminder : `dismiss`
 
@@ -1065,7 +1065,7 @@ Result: The reminder panel of the sidebar will be hidden.
 
 The following walkthrough shows how you can dismiss a reminder.
 
-This walkthrough is a followup of the walkthrough in [Creating a Project](#513-creating-a-projecttask-add).
+This walkthrough is a followup of the walkthrough in [Creating a Project/Task](#513-creating-a-projecttask-add).
 
 1. After the reminder panel is shown, you can type `dismiss` in the command box, and press the <kbd>Enter</kbd> key to execute it.
 
@@ -1307,7 +1307,7 @@ The following walkthrough shows how you can clear all projects in Momentum
 
 ### 5.9. Viewing Help : `help`
 
-Shows a message explaning how to access the help page.
+Shows a message explaining how to access the help page.
 
 ![help message](images/helpMessage.png)
 Figure 5.9A: The help window
