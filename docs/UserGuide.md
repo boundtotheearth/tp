@@ -25,11 +25,14 @@ Leave it to Momentum to do the following for you:
     * View projects’  sub-tasks, deadline, description with just a few keystrokes.
     * Find any projects and task in Momentum with a single command.
     * Sort projects in different orders to your convenience at any time.
+
 * **Project Management**
     * Set reminders to remind you of upcoming deadlines.
+
 * **Time Management**
     * Keep track of how much time you have been spending on each project using our time-tracking tools.
     * Gain insights into your time usage with our statistics feature.
+
 * **Personalisation**
     * Personalise Momentum’s settings to fit your preference.
 
@@ -146,8 +149,11 @@ You may also have to enter both dates and times together. When entered together,
 
 3. Copy the file to the folder you want to use as the _home folder_ for Momentum.
 
-4. Double-click the file to start Momentum. The GUI similar to below should appear in a few seconds. <br>
+4. Double-click the file to start Momentum. The GUI similar to below should appear in a few seconds.
+
    ![Ui](images/Ui.png)
+   Figure 3A: Momentum's User Interface
+
 
 5. Type the command in the command box and press <kbd>Enter</kbd> to execute it. e.g. typing `help` and pressing <kbd>Enter</kbd> will open the help window.<br>
 
@@ -607,7 +613,7 @@ The following walkthrough shows how you can sort projects in Momentum by specify
 
 ##### 5.1.6c. Sorting with Only Order Specified
 
-The current sort type is assumed if the `type` is not specified.
+The current sort type will be used if the `type` is not specified.
 
 If there is no existing project order (when the application restarts), order will be alphabetical by default.
 
