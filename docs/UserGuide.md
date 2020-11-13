@@ -903,7 +903,7 @@ Note that this command is different from the `home` command. When viewing a proj
 
 Format: `list`
 
-The following walkthrough shows how you can list projects or tasks in Momentum.
+The following walkthrough shows how you can list projects in Momentum.
 
 Suppose you had previously executed a [find command](#searching-for-items-find) and would like to see all your projects again.
 
@@ -913,9 +913,13 @@ Suppose you had previously executed a [find command](#searching-for-items-find) 
 
     ![List2](images/List2.png)
     
-2. The results box will display a message to indicate that all your projects are being displayed. You should see that all your projects are being displayed in the displayed list.
+2. The results box will display a message to indicate that all your projects are being displayed. 
 
     ![List3](images/List3.png)
+
+3. You should see that all your projects are being displayed in the displayed list.
+
+    ![List4](images/List4.png)
 
 ### Time Tracking
 
@@ -929,14 +933,16 @@ Momentum remembers each timer that you start/stop and uses this information to c
 
 Format: `start ID`
 
-* Starts a timer for the project or task at the specified `ID`.
-* Only 1 timer can be running for each project or task at any time.
-* You can refer to [`ID` Term](#id-term) for more information.
+* Starts a timer for the item at the specified `ID`.
+
+* Only 1 timer can be running for each item at any time.
+
+* You can refer to [Index Term](#index-term) for more information.
 
 <div markdown="block" class="alert alert-info">
 
 :bulb:
-You can run timers for more than one project or task concurrently, if you are multi-tasking.
+You can run timers for more than one item concurrently, if you are multi-tasking.
 
 </div>
 
@@ -949,19 +955,21 @@ You can run timers for a project separately from its tasks. This allows you to t
 
 Example: `start 2`
 
-Result: Starts a timer for the second project or task in the displayed list.
+Result: Starts a timer for the second item in the displayed list.
 
 #### Stopping a Timer for a Project: `stop`
 
 Format: `stop ID`
 
-* Stops a running timer for the project or task at the specified `ID`.
+* Stops a running timer for the item at the specified `ID`.
+
 * A timer can only be stopped if there is one already running.
-* You can refer to [`ID` Term](#id-term) for more information.
+
+* You can refer to [Index Term](#index-term) for more information.
 
 Example: `stop 2`
 
-Result: Stops the timer for the second project or task in the displayed list.
+Result: Stops the timer for the second item in the displayed list.
 
 #### Active Timers Panel
 
@@ -975,7 +983,8 @@ This panel will show you the name of the item, as well as when the timer was sta
 #### Time Tracking Example
 
 Here is an example of how you can use the `start` and `stop` commands to track the time that you spend on a project.
-Suppose that you are going to start working on the project "Alpharad Youtube Endcard", which is the first item shown below:
+
+Suppose that you are going to start working on the project `Alpharad Youtube Endcard`, which is the first item shown below:
 
 ![TimerExample1](images/TimerExample1.png)
 
@@ -993,11 +1002,9 @@ You can perform time tracking with the following steps:
 
     ![TimerExample4](images/TimerExample4.png)
 
-   Now that the timer has been successfully started, you can proceed to do your work. You can also choose to close
- Momentum. The timer will continue to run even when Momentum is closed. Proceed to the next step when you are done
-  with your work.
+   Now that the timer has been successfully started, you can proceed to do your work. You can also choose to close Momentum. The timer will continue to run even when Momentum is closed. Proceed to the next step when you are done with your work.
 
-4. To stop the timer, type `stop 1` into the command box and press `Enter`.
+4. To stop the timer, type `stop 1` into the command box and press <kbd>Enter</kbd>.
 
     ![TimerExample5](images/TimerExample5.png)
 
@@ -1009,9 +1016,7 @@ You can perform time tracking with the following steps:
 
     ![TimerExample7](images/TimerExample7.png)
 
-8. The statistics panel (see [statistics](#statistics)) will also be updated to reflect the time that you have spent
- working on the
- project:
+8. The [statistics panel](#statistics) will also be updated to reflect the time that you have spent working on the project:
 
     ![TimerExample8](images/TimerExample8.png)
 
@@ -1025,45 +1030,103 @@ Done by Cheong Ying Yi Clara
 
 * If you missed a reminder, it will be greyed out in the item.
 
-* You can refer to [Walkthrough of Creating a Project](#walkthrough-of-creating-a-project) for more details on how you can add a reminder.
+* You can refer to [Creating a Project](#creating-a-project-task-add) for more details on how you can add a reminder.
 
-* You can refer to [Walkthrough of Dismissing a Reminder](#walkthrough-of-dismissing-a-reminder) for more details on how you can dismiss a reminder.
+#### Dismissing a Reminder : `dismiss`
+
+Done by Cheong Ying Yi Clara
+
+You can dismiss a reminder using this command.
+
+Format: `dismiss`
+
+Result: The reminder panel of the sidebar will be hidden.
 
 <div markdown="block" class="alert alert-danger">
 
-:warning: If you set multiple reminders at the same date and time, Momentum will only show one of the reminders in the reminder panel and mark other reminders as missed.
+:warning: You cannot dismiss a reminder if the reminder panel of the sidebar is not visible.
 
 </div>
 
-### Undo/Redo
+#### Walkthrough of Dismissing a Reminder
+
+This walkthrough is a followup of the walkthrough in [Creating a Project](#creating-a-project-task-add).
+
+1. After the reminder panel is shown, you can type `dismiss` in the command box, and press the <kbd>Enter</kbd> key to execute it.
+
+   ![Walkthrough of Dismissing a Reminder Step 1](images/DismissDiagram1.png)
+
+2. The result box will display a message to indicate that that you executed the command successfully.
+
+   ![Walkthrough of Dismissing a Reminder Step 2](images/DismissDiagram2.png)
+
+3. The reminder has been dismissed.
+
+   ![Walkthrough of Dismissing a Reminder Step 3](images/DismissDiagram3.png)
+
+### Showing and Hiding Tags : `show`
+
+Done by Cheong Ying Yi Clara
+
+You can hide or show the tags panel of the sidebar.
+
+Format: `show t/`
+
+Result: The visibility of the tags panel will be toggled.
+
+<div markdown="block" class="alert alert-info">
+
+:bulb: You can resize the tags panel by clicking and dragging the edges.
+
+</div>
+
+#### Walkthrough of Hiding Tags
+
+1. You can type `show t/` in the command box, and press the <kbd>Enter</kbd> key to execute it.
+
+   ![Walkthrough of Hiding Tags Step 1](images/ShowDiagram1.png)
+
+2. The result box will display a message to indicate that you executed the command successfully.
+
+   ![Walkthrough of Hiding Tags Step 2](images/ShowDiagram2.png)
+
+1. The tags panel has been hidden
+
+   ![Walkthrough of Hiding Tags Step 3](images/ShowDiagram3.png)
+
+### Undoing/Redoing
 
 Done By Kang Su Min
 
-The undo/redo feature can be thought of as a "history traversal" function. After the execution of every command (excluding `help` and `exit`), all data at that point in time is stored in your Momentum history log.
-The undo and redo command allows you to traverse up or down this history log such that you can recover any data that has been stored in your Momentum history at any point in time.  
+Momentum allows you to easily reverse any mistakes that you make with the `undo` and `redo` commands.
 
 #### Undoing the Previous Command: `undo`
 
-The undo command undoes the last command that was executed. You can recover all data before the last command was executed.
+The undo command reverses the previous command that you executed. This allows you to revert changes that you have made to Momentum.
 
 Format: `undo`
 
-Example: `start 1`, `undo`
-
-Result: Timer for item at index 1 is started, then stopped and removed after `undo` is executed.
-
-The following walkthrough shows how a user can start a timer for a project, then undo the command.
+The following walkthrough shows how you can start a timer for a project, then undo the command.
 
 1. Key in command `start 1` in the command window then press <kbd>Enter</kbd>.
-![Undo 1](images/Undo1.png)
+
+   ![Undo 1](images/Undo1.png)
+
 2. The result box will display a message to indicate that the command has been executed successfully, and the timer for that project will appear at the side panel.
-![Undo 2](images/Undo2.png)
+
+   ![Undo 2](images/Undo2.png)
+
 3. Key in command `undo` in the command window then press <kbd>Enter</kbd>.
-![Undo 3](images/Undo3.png)
+
+   ![Undo 3](images/Undo3.png)
+
 4. The result box will display a message to indicate that the command has been undone successfully.
-![Undo 4](images/Undo4.png)
-5. The timer has been removed from the project. Timer is no longer running.
-![Undo 5](images/Undo5.png)
+
+   ![Undo 4](images/Undo4.png)
+
+5. The timer has been stopped for the project. The time tracked is not saved.
+
+   ![Undo 5](images/Undo5.png)
 
 #### Redoing the Previous Command: `redo`
 
@@ -1213,72 +1276,6 @@ Suppose that you would like to clear all the projects in Momentum.
 3. The result box will display a message to indicate that all projects have been cleared. You should no long see any projects in the displayed list.
 
     ![ClearProject2](images/ClearProject2.png)
-
-### Dismissing a Reminder : `dismiss`
-
-Done by Cheong Ying Yi Clara
-
-You can dismiss a reminder using this command.
-
-Format: `dismiss`
-
-Result: The reminder panel of the sidebar will be hidden.
-
-<div markdown="block" class="alert alert-danger">
-
-:warning: You cannot dismiss a reminder if the reminder panel of the sidebar is not visible.
-
-</div>
-
-<div markdown="block" class="alert alert-danger">
-
-:warning: Momentum cannot show a reminder that you dismissed in the reminder panel again. You can undo a dismissal to show an expired reminder in the item.
-
-</div>
-
-#### Walkthrough of Dismissing a Reminder
-
-This walkthrough is a followup of [Walkthrough of Creating a Project](#walkthrough-of-creating-a-project).
-
-1. After the reminder panel is shown, you can type `dismiss` in the command box, and press the <kbd>Enter</kbd> key to execute it.
-![Walkthrough of Dismissing a Reminder Step 1](images/DismissDiagram1.png)
-
-2. The result box will display a message to indicate that that you executed the command successfully.
-![Walkthrough of Dismissing a Reminder Step 2](images/DismissDiagram2.png)
-
-3. You dimissed the reminder as shown below.
-![Walkthrough of Dismissing a Reminder Step 3](images/DismissDiagram3.png)
-
-### Showing and Hiding Tags : `show`
-
-Done by Cheong Ying Yi Clara
-
-You can hide or show the tags panel of the sidebar.
-
-Format: `show t/`
-
-Result:
-
-* If the tags panel was visible, the tags panel will be hidden.
-
-* If the tags panel was hidden, the tags panel will be shown.
-
-<div markdown="block" class="alert alert-info">
-
-:bulb: You can resize the tags panel by clicking and dragging the edges.
-
-</div>
-
-#### Walkthrough of Hiding Tags
-
-1. You can type `show t/` in the command box, and press the <kbd>Enter</kbd> key to execute it.
-![Walkthrough of Hiding Tags Step 1](images/ShowDiagram1.png)
-
-2. The result box will display a message to indicate that you executed the command successfully.
-![Walkthrough of Hiding Tags Step 2](images/ShowDiagram2.png)
-
-1. You hide the tags panel as shown below.
-![Walkthrough of Hiding Tags Step 3](images/ShowDiagram3.png)
 
 ### Viewing Help : `help`
 
