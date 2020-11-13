@@ -13,8 +13,6 @@ title: User Guide
 
 --------------------------------------------------------------------------------------------------------------------
 
-<div style="page-break-after: always;"></div>
-
 ## 1. Introduction
 
 Attention all freelancers, here is an application you have always wanted, but never got to experience!
@@ -72,8 +70,6 @@ Throughout this document, you will come across these notations:
 
 * **Terminology**: Momentum tracks both your projects and tasks. In this document, if we are referring to both projects and tasks at the same time, we will use the term "item". 
 
-<div style="page-break-after: always;"></div>
-
 ### 2.2. Command Format
 
 You will be presented with multiple commands throughout this document. You may find the description of the command format below.
@@ -99,8 +95,6 @@ You will be presented with multiple commands throughout this document. You may f
 * You need to enter an id which refers to the id number shown in the displayed list.
 
 * You need to enter a **positive number** such as 1, 2, 3, …​
-
-<div style="page-break-after: always;"></div>
 
 ### 2.3. Date and Time Terms
 
@@ -150,8 +144,6 @@ You may also have to enter both dates and times together. When entered together,
 
 **Invalid**: `15:08:02T2020-08-02` Wrong order of date and time.
 
-<div style="page-break-after: always;"></div>
-
 ## 3. Quick Start<a name="quick-start"></a>
 
 1. Ensure you have Java `11` or above installed in your computer.
@@ -195,8 +187,6 @@ You may also have to enter both dates and times together. When entered together,
 Refer to the [Features](#5-features) below for a more comprehensive set of features available in Momentum.
 
 --------------------------------------------------------------------------------------------------------------------
-
-<div style="page-break-after: always;"></div>
 
 ## 4. User Interface Overview
 
