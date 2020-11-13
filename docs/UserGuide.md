@@ -276,10 +276,14 @@ Suppose you would like to view the tasks belonging to the 2nd project in the lis
 
     ![View2](images/View2.png)
 
-2. The results box will display a message to indicate that you have successfully changed your view. You should see the tasks belonging to the project in the displayed list.
+2. The results box will display a message to indicate that you have successfully changed your view.
 
     ![View3](images/View3.png)
-    
+ 
+3. You should see the tasks belonging to the project in the displayed list.  
+
+    ![View4](images/View4.png)
+
 #### View Projects: `home`
 
 Done by: Farrell Nah Jun Hao
@@ -297,9 +301,13 @@ The following walkthrough shows how you can use the home command to go from task
 
     ![Home1](images/Home1.png)
 
-2. The results box will display a message to indicate that you have successfully changed your view. You should see the tasks belonging to the project in the displayed list.
+2. The results box will display a message to indicate that you have successfully changed your view.
 
     ![Home2](images/Home2.png)
+
+3. You should see the tasks belonging to the project in the displayed list.
+
+    ![Home3](images/Home3.png)
 
 #### Creating a Project/Task: `add`
 
@@ -361,19 +369,19 @@ The following walkthrough shows how you can create a new project in Momentum.
 
 1. You can type `add n/Momentum d/CS2103T Team Project c/ dd/2021-12-07 dt/11:01:12 r/2021-12-07T11:01:12 t/impt` in the command box, and press the <kbd>Enter</kbd> key to execute it.
 
-  ![Walkthrough of Creating a Project Diagram Step 1](images/AddProjectDiagram1.png)
+    ![Walkthrough of Creating a Project Diagram Step 1](images/AddProjectDiagram1.png)
 
 2. The result box will display a message to indicate that you executed the command successfully.
 
-  ![Walkthrough of Creating a Project Diagram Step 2](images/AddProjectDiagram2.png)
+    ![Walkthrough of Creating a Project Diagram Step 2](images/AddProjectDiagram2.png)
 
 3. You added a project to the project list as shown below.
 
-  ![Walkthrough of Creating a Project Diagram Step 3](images/AddProjectDiagram3.png)
+    ![Walkthrough of Creating a Project Diagram Step 3](images/AddProjectDiagram3.png)
 
 4. On 7 December 2021, at 11:01:12, the reminder panel will show the reminder you added and the reminder of the project will be removed.
 
-  ![Walkthrough of Creating a Project Diagram Step 4](images/AddProjectDiagram4.png)
+    ![Walkthrough of Creating a Project Diagram Step 4](images/AddProjectDiagram4.png)
 
 #### Editing a Project/Task: `edit`
 
@@ -443,15 +451,15 @@ The following walkthrough shows how you can edit a task in Momentum.
 
 1. In task view, you can type `edit 3 n/NewMomentum d/NewDescription dd/2021-12-07 r/ t/normal` in the command box, and press the <kbd>Enter</kbd> key to execute it.
 
-  ![Walkthrough of Editing a Task Diagram Step 1](images/EditTaskDiagram1.png)
+    ![Walkthrough of Editing a Task Diagram Step 1](images/EditTaskDiagram1.png)
 
 2. The result box will display a message to indicate that you executed the command successfully.
 
-  ![Walkthrough of Editing a Task Diagram Step 2](images/EditTaskDiagram2.png)
+    ![Walkthrough of Editing a Task Diagram Step 2](images/EditTaskDiagram2.png)
 
 3. You edited a task in the task list as shown below.
 
-  ![Walkthrough of Editing a Task Diagram Step 3](images/EditTaskDiagram3.png)
+    ![Walkthrough of Editing a Task Diagram Step 3](images/EditTaskDiagram3.png)
 
 #### Deleting a Project/Task: `delete`
 
@@ -539,15 +547,15 @@ The following walkthrough shows how you can sort projects in Momentum by the def
 
 1. Key in command `sort` in the command box and press <kbd>Enter</kbd>.
 
-  ![Default Sort Step 1](images/DefaultSort1.png)
+    ![Default Sort Step 1](images/DefaultSort1.png)
 
 2. The result box will display a message to indicate that the command has been executed successfully.
 
-  ![Default Sort Step 2](images/DefaultSort2.png)
+    ![Default Sort Step 2](images/DefaultSort2.png)
 
 3. All projects are ordered in default ascending alphabetical order with incomplete tasks showing up at the top of the list (Completion status sort is on).
 
-  ![Default Sort Step 3](images/DefaultSort3.png)
+    ![Default Sort Step 3](images/DefaultSort3.png)
 
 ##### Sorting With Completion Status Toggle
 
@@ -559,17 +567,17 @@ The following walkthrough shows how you can toggle the completion status order i
 
 1. Key in command `sort c/` in the command box and press <kbd>Enter</kbd>.
 
-  ![Toggle Completion Status Step 1](images/ToggleCompletionStatus1.png)
+    ![Toggle Completion Status Step 1](images/ToggleCompletionStatus1.png)
 
   Note that currently all projects at the top of the list are incomplete tasks.
 
 2. The result box will display a message to indicate that the command has been executed successfully.
 
-  ![Toggle Completion Status Step 2](images/ToggleCompletionStatus2.png)
+    ![Toggle Completion Status Step 2](images/ToggleCompletionStatus2.png)
 
 3. All projects are ordered in default ascending alphabetical order without regard for their completion status.
 
-  ![Toggle Completion Status Step 3](images/ToggleCompletionStatus3.png)
+    ![Toggle Completion Status Step 3](images/ToggleCompletionStatus3.png)
 
 ##### Sorting with Only Type Specified
 
@@ -583,17 +591,17 @@ The following walkthrough shows how you can sort projects in Momentum by specify
 
 1. Key in command `sort type/deadline` in the command box and press <kbd>Enter</kbd>.
 
-  ![Deadline Sort 1](images/DeadlineSort1.png)
+    ![Deadline Sort 1](images/DeadlineSort1.png)
 
   Note that the projects are not sorted in asceding deadline order.
 
 2. The result box will display a message to indicate that the command has been executed successfully.
 
-  ![Deadline Sort 2](images/DeadlineSort2.png)
+    ![Deadline Sort 2](images/DeadlineSort2.png)
 
 3. All projects are ordered in ascending deadline order.
 
-  ![Deadline Sort 3](images/DeadlineSort3.png)
+    ![Deadline Sort 3](images/DeadlineSort3.png)
 
 ##### Sorting With Only Order Specified
 
@@ -609,17 +617,17 @@ The following walkthrough shows how you can sort projects in Momentum by specify
 
 1. Key in command `sort order/dsc` in the command box and press <kbd>Enter</kbd>.
 
-  ![Deadline Sort Descending 1](images/DeadlineDescending1.png)
+    ![Deadline Sort Descending 1](images/DeadlineDescending1.png)
 
   Note that currently the projects are sorted in ascending deadline order.
 
 2. The result box will display a message to indicate that the command has been executed successfully.
 
-  ![Deadline Sort Descending 2](images/DeadlineDescending2.png)
+    ![Deadline Sort Descending 2](images/DeadlineDescending2.png)
 
 3. All projects are ordered in descending deadline order.
 
-  ![Deadline Sort Descending 3](images/DeadlineDescending3.png)
+    ![Deadline Sort Descending 3](images/DeadlineDescending3.png)
 
 ##### Sorting With Both Type and Order Specified
 
@@ -631,17 +639,17 @@ The following walkthrough shows how you can sort projects in Momentum by specify
 
 1. Key in command `sort type/created order/dsc` in the command box and press <kbd>Enter</kbd>.
 
-  ![Created Descending 1](images/CreatedDescending1.png)
+    ![Created Descending 1](images/CreatedDescending1.png)
 
   Note that the projects are not sorted by descending created date order.
 
 2. The result box will display a message to indicate that the command has been executed successfully.
 
-  ![Created Descending 2](images/CreatedDescending2.png)
+    ![Created Descending 2](images/CreatedDescending2.png)
 
 3. All projects are ordered in descending created date order.
 
-  ![Created Descending 3](images/CreatedDescending3.png)
+    ![Created Descending 3](images/CreatedDescending3.png)
 
   Note that for projects with the same created date, they are sorted in descending alphabetical order.
 
@@ -677,15 +685,15 @@ The following walkthrough shows how you can use the find command to search for i
 
 1. Key in the command `find n/ad` in the command box and press <kbd>Enter</kbd>.
 
-  ![Find by Name Step 1](images/FindByName1.png)
+    ![Find by Name Step 1](images/FindByName1.png)
 
 2. The result box will display a message to indicate that the command has been executed successfully.
 
-  ![Find by Name Step 2](images/FindByName2.png)
+    ![Find by Name Step 2](images/FindByName2.png)
 
 3. All projects that contain `ad` in their name will be shown.
 
-  ![Find by Name Step 3](images/FindByName3.png)
+    ![Find by Name Step 3](images/FindByName3.png)
 
 ##### Searching by Description
 
@@ -697,15 +705,15 @@ The following walkthrough shows how you can use the find command to search for i
 
 1. Key in the command `find d/discussion` in the command box and press <kbd>Enter</kbd>.
 
-  ![Find by Description Step 1](images/FindByDesc1.png)
+    ![Find by Description Step 1](images/FindByDesc1.png)
 
 2. The result box will display a message to indicate that the command has been executed successfully.
 
-  ![Find by Description Step 2](images/FindByDesc2.png)
+    ![Find by Description Step 2](images/FindByDesc2.png)
 
 3. All projects that contain `discussion` in their description will be shown.
 
-  ![Find by Description Step 3](images/FindByDesc3.png)
+    ![Find by Description Step 3](images/FindByDesc3.png)
 
 ##### Searching by Tag
 
@@ -723,15 +731,15 @@ The following walkthrough shows how you can use the find command to search for p
 
 1. Key in the command `find t/webdesign` in the command box and press <kbd>Enter</kbd>.
 
-  ![Find by Tag Step 1](images/FindByTag1.png)
+    ![Find by Tag Step 1](images/FindByTag1.png)
 
 2. The result box will display a message to indicate that the command has been executed successfully.
 
-  ![Find by Tag Step 2](images/FindByTag2.png)
+    ![Find by Tag Step 2](images/FindByTag2.png)
 
 3. All projects that contain the tag `webdesign` will be shown.
 
-  ![Find by Tag Step 3](images/FindByTag3.png)
+    ![Find by Tag Step 3](images/FindByTag3.png)
 
 ##### Searching by Completion Status
 
@@ -745,15 +753,15 @@ The following walkthrough shows how you can use the find command to search for p
 
 1. Key in the command `find c/completed` in the command box and press <kbd>Enter</kbd>.
 
-  ![Find by Completion Step 1](images/FindByCompletion1.png)
+    ![Find by Completion Step 1](images/FindByCompletion1.png)
 
 2. The result box will display a message to indicate that the command has been executed successfully.
 
-  ![Find by Completion Step 2](images/FindByCompletion2.png)
+    ![Find by Completion Step 2](images/FindByCompletion2.png)
 
 3. All projects that are completed will be shown.
 
-  ![Find by Completion Step 3](images/FindByCompletion3.png)
+    ![Find by Completion Step 3](images/FindByCompletion3.png)
 
 ##### Searching by Multiple Parameters
 
@@ -767,15 +775,15 @@ The following walkthrough shows you can use the find command to search for proje
 
 1. Key in the command `find d/discussion drawing` in the command box and press <kbd>Enter</kbd>.
 
-  ![Find by Multiple Parameters Step 1](images/FindByMultipleKeywords1.png)
+    ![Find by Multiple Parameters Step 1](images/FindByMultipleKeywords1.png)
 
 2. The result box will display a message to indicate that the command has been executed successfully.
 
-  ![Find by Multiple Parameters Step 2](images/FindByMultipleKeywords2.png)
+    ![Find by Multiple Parameters Step 2](images/FindByMultipleKeywords2.png)
 
 3. All projects that contain `discussion` or `drawing` in their description will be shown.
 
-  ![Find by Multiple Parameters Step 3](images/FindByMultipleKeywords3.png)
+    ![Find by Multiple Parameters Step 3](images/FindByMultipleKeywords3.png)
 
 You can use the same method to search for projects using multiple parameters for name or tags. However, this will not work with completion status. You can only search by one completion status. 
 
@@ -791,15 +799,15 @@ The following walkthrough shows you can use the find command to search for proje
 
 1. Key in the command `find n/certification d/discussion` in the command box and press <kbd>Enter</kbd>.
 
-  ![Find by Multiple Prefixes Step 1](images/FindByMultipleParameters1.png)
+    ![Find by Multiple Prefixes Step 1](images/FindByMultipleParameters1.png)
 
 2. The result box will display a message to indicate that the command has been executed successfully.
 
-  ![Find by Multiple Prefixes Step 2](images/FindByMultipleParameters2.png)
+    ![Find by Multiple Prefixes Step 2](images/FindByMultipleParameters2.png)
 
 3. All projects that contain `certification` in their name or `discussion` in their description will be shown.
 
-  ![Find by Multiple Prefixes Step 3](images/FindByMultipleParameters3.png)
+    ![Find by Multiple Prefixes Step 3](images/FindByMultipleParameters3.png)
 
 You can also use multiple parameters for each prefix that allows for it as mentioned in the previous section. 
 
@@ -836,15 +844,15 @@ Let's first look at `match/any`. This match type shows an item as long as any pa
 
 1. Key in the command `find n/ad d/discussion t/artcomm match/any` in the command box and press <kbd>Enter</kbd>.
 
-  ![Match Any Step 1](images/MatchAny1.png)
+    ![Match Any Step 1](images/MatchAny1.png)
 
 2. The result box will display a message to indicate that the command has been executed successfully.
 
-  ![Match Any Step 2](images/MatchAny2.png)
+    ![Match Any Step 2](images/MatchAny2.png)
 
 3. All projects that contain `ad` in their name or `discussion` in their description or the tag `artcomm` will be shown.
 
-  ![Match Any Step 3](images/MatchAny3.png)
+   ![Match Any Step 3](images/MatchAny3.png)
 
 As seen in the example above, an item is shown as long as any one of the parameters matches it. 
 
@@ -852,15 +860,15 @@ Let's now look at `match/all`. This match type shows an entry only if all parame
 
 1. Key in the command `find n/ad d/discussion t/artcomm match/all` in the command box and press <kbd>Enter</kbd>.
 
-  ![Match All Step 1](images/MatchAll1.png)
+    ![Match All Step 1](images/MatchAll1.png)
 
 2. The result box will display a message to indicate that the command has been executed successfully.
 
-  ![Match All Step 2](images/MatchAll2.png)
+    ![Match All Step 2](images/MatchAll2.png)
 
 3. All projects that contain `ad` in their name and `discussion` in their description and the tag `artcomm` will be shown.
 
-  ![Match All Step 3](images/MatchAll3.png)
+    ![Match All Step 3](images/MatchAll3.png)
 
 As seen in the example above, an item is only shown if all parameters matches it. 
 
@@ -1287,13 +1295,9 @@ The following walkthrough shows how you can clear all projects in Momentum
     
     ![ClearProject1](images/ClearProject1.png)
 
-3. The result box will display a message to indicate that all projects have been cleared.
+3. The result box will display a message to indicate that all projects have been cleared. You should no long see any projects in the displayed list.
 
     ![ClearProject2](images/ClearProject2.png)
-
-4. You should no long see any projects in the displayed list.
-
-    ![ClearProject3](images/ClearProject3.png)
 
 ### Viewing Help : `help`
 
