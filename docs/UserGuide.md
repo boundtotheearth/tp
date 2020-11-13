@@ -460,54 +460,25 @@ Deletes a project or task in the list.
 Format: `delete ID`
 
 * Deletes the project or task at the specified `ID`.
-* You can refer to [`ID` Term](#id-term) for more information.
+* You can refer to [Index Term](#index-term) for more information.
 
 Example: `delete 2`
 
 Result: Deletes the second project or task in the list.
 
-##### Walkthrough of deleting a project
+The following walkthrough shows how you can delete a task in Momentum.
+
 Suppose you would like to delete the first project in the list
 
 ![Delete1](images/Delete1.png)
 
-1. Type `delete 1` into the command box and press <kbd>Enter</kbd>
+1. Type `delete 1` into the command box and press <kbd>Enter</kbd>.
 
     ![Delete2](images/Delete2.png)
     
 2. The results box will display a message to indicate that the project has been successfully deleted. You should no long see the project in the displayed list.
 
     ![Delete3](images/Delete3.png)
-
-#### View All : `list`
-
-Done by Farrell Nah Jun Hao
-
-When you are viewing projects, this command shows you a list of all projects in Momentum.
-
-When you are viewing a project's tasks, this command shows you a list of all the tasks for the project.
-
-<div markdown="block" class="alert alert-info">
-
-:bulb:
-Note that this command is different from the `home` command. When viewing a project's tasks, the `home` command will change the view to show you all the projects being tracked by Momentum. However, the `list` will only show you all the tasks for the project.
-
-</div>
-
-Format: `list`
-
-##### Walkthrough of viewing all projects
-Suppose you ahd previously executed a [find command]() and would like to see all your projects again.
-
-![List1](images/List1.png)
-
-1. Type `list` into the command box and press <kbd>Enter</kbd>
-
-    ![List2](images/List2.png)
-    
-2. The results box will display a message to indicate that all your projects are being displayed. You should see that all your projects are being displayed in the displayed list.
-
-    ![List3](images/List3.png)
 
 #### Sort Projects : `sort`
 
@@ -518,26 +489,39 @@ This command allows you to sort the list of displayed projects or tasks in a par
 Format: `sort [type/SORT_TYPE] [order/SORT_ORDER] [c/]`
 
 * There are 3 sort types.
+
   * `type/alpha` will sort the list of projects in alphabetical order.
+  
   * `type/deadline` will sort the list of projects according to their deadlines.
+
   * `type/created` will sort the list of projects according to their date of creation.
 
+
 * There are 2 sort orders.
+
   * `order/asc` will sort the list of projects in ascending order.
+
   * `order/dsc` will sort the list of projects in descending order.
 
 In addition to the above sort types and orders, the list can be sorted by completion status.
+
 * This is the "dominant sort" that will ensure that all incomplete projects/tasks are above complete projects/tasks, before sorting the projects/tasks in the specified sort type and order above.
+
 * The default sort order will sort the projects/tasks by completion status.
+
 * `sort c/` will toggle the default completion status sort.
+
     * Once the completion status sort is off, the projects/tasks will be sorted in the specified sort type and order without regard for their completion status.
 
 <div markdown="block" class="alert alert-primary">
 
-:bulb: 
-* When the application first starts, the completion status order is on. This completion status sort status (on/off) is maintained until it is toggled.
+:bulb: Here are some things you should take note of
+* When the application first starts, the completion status order is turned on. This completion status sort status (on/off) is maintained until it is toggled.
+
 * `type/alpha` and `order/asc` will be used as default if both sort type and order are not specified (i.e. command is `sort`)
+
 * For both `sort type/deadline` and `sort type/created`, projects with the same deadline or same created date will be sorted in alphabetical order.
+
 * For `sort type/deadline`, projects/tasks with deadlines will appear at the top of the list sorted in deadline order, while those without deadlines will be pushed to the end of the list sorted in alphabetical order
 
 </div>
@@ -828,6 +812,37 @@ The posibilities of using match type to enhance your searches is limitless. Here
 
 1. If you have many projects and want to find a specific project, you can use `match/all` to narrow down your search results.
 2. If you have many projects and want to find projects that are not part of a certain category, you can use `match/none` to narrrow down your search results.
+
+#### View All : `list`
+
+Done by Farrell Nah Jun Hao
+
+When you are viewing projects, this command shows you a list of all projects in Momentum.
+
+When you are viewing a project's tasks, this command shows you a list of all the tasks for the project.
+
+<div markdown="block" class="alert alert-info">
+
+:bulb:
+Note that this command is different from the `home` command. When viewing a project's tasks, the `home` command will change the view to show you all the projects being tracked by Momentum. However, the `list` will only show you all the tasks for the project.
+
+</div>
+
+Format: `list`
+
+The following walkthrough shows how you can list projects or tasks in Momentum.
+
+Suppose you had previously executed a [find command](#filtering-projects-find) and would like to see all your projects again.
+
+![List1](images/List1.png)
+
+1. Type `list` into the command box and press <kbd>Enter</kbd>.
+
+    ![List2](images/List2.png)
+    
+2. The results box will display a message to indicate that all your projects are being displayed. You should see that all your projects are being displayed in the displayed list.
+
+    ![List3](images/List3.png)
 
 ### Time Tracking
 
