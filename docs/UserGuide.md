@@ -68,12 +68,16 @@ You will be presented with multiple commands throughout this document. You may f
 
 * Words in `UPPER_CASE` are the parameters to be supplied by the user.
   e.g. in `add n/NAME`, `NAME` is a parameter which can be used as `add n/Blog Design`.
+
 * Items in square brackets are optional.
   e.g `n/NAME [t/TAG]` can be used as `n/Blog Design t/friend` or as `n/Blog Design`.
+
 * Items with `…`​ after them can be used multiple times including zero times.
   e.g. `[t/TAG]…​` can be used as ` ` (i.e. 0 times), `t/friend`, `t/friend t/family` etc.
+
 * Items with `…` inside square brackets `[t/TAG [MORE_TAGS]...]` can take in multiple space separated arguments
   e.g. `[[t/TAG [MORE_TAGS]...]` can represent `t/friend friend family`.
+
 * Parameters can be in any order.
   e.g. If the command specifies `n/Blog Design dd/2020-11-05`, `dd/2020-11-05 n/Blog Design` is also acceptable.
 
@@ -309,7 +313,7 @@ Format: `add n/NAME [d/DESCRIPTION] [c/] [dd/DEADLINE_DATE [dt/DEADLINE_TIME]] [
 
 * `[d/DESCRIPTION]`
 
-  * You can enter any character for descriptions.
+  * You can enter any character for descriptions.<br><br>
 
 * `[c/]`
 
@@ -355,19 +359,19 @@ The following walkthrough shows how you can create a new project in Momentum.
 
 1. You can type `add n/Momentum d/CS2103T Team Project c/ dd/2021-12-07 dt/11:01:12 r/2021-12-07T11:01:12 t/impt` in the command box, and press the <kbd>Enter</kbd> key to execute it.
 
-![Walkthrough of Creating a Project Diagram Step 1](images/AddProjectDiagram1.png)
+  ![Walkthrough of Creating a Project Diagram Step 1](images/AddProjectDiagram1.png)
 
 2. The result box will display a message to indicate that you executed the command successfully.
 
-![Walkthrough of Creating a Project Diagram Step 2](images/AddProjectDiagram2.png)
+  ![Walkthrough of Creating a Project Diagram Step 2](images/AddProjectDiagram2.png)
 
 3. You added a project to the project list as shown below.
 
-![Walkthrough of Creating a Project Diagram Step 3](images/AddProjectDiagram3.png)
+  ![Walkthrough of Creating a Project Diagram Step 3](images/AddProjectDiagram3.png)
 
 4. On 7 December 2021, at 11:01:12, the reminder panel will show the reminder you added and the reminder of the project will be removed.
 
-![Walkthrough of Creating a Project Diagram Step 4](images/AddProjectDiagram4.png)
+  ![Walkthrough of Creating a Project Diagram Step 4](images/AddProjectDiagram4.png)
 
 #### Editing a Project/Task: `edit`
 
@@ -389,15 +393,15 @@ Format: `edit ID [n/NAME] [d/DESCRIPTION] [c/] [dd/DEADLINE_DATE [dt/DEADLINE_TI
 
 * `ID`
 
-  * You can refer to [Index Term](#index-term) for more information. <br>
+  * You can refer to [Index Term](#index-term) for more information. <br><br>
   
 * `n/NAME`
 
-  * You can enter alphanumeric characters (a-Z, 0-9) and spaces for names.
+  * You can enter alphanumeric characters (a-Z, 0-9) and spaces for names. <br><br>
 
 * `[d/DESCRIPTION]`
 
-  * You can enter any character for descriptions.
+  * You can enter any character for descriptions. <br><br>
 
 * `[c/]`
 
@@ -436,13 +440,16 @@ Format: `edit ID [n/NAME] [d/DESCRIPTION] [c/] [dd/DEADLINE_DATE [dt/DEADLINE_TI
 The following walkthrough shows how you can edit a task in Momentum.
 
 1. In task view, you can type `edit 3 n/NewMomentum d/NewDescription dd/2021-12-07 r/ t/normal` in the command box, and press the <kbd>Enter</kbd> key to execute it.
-![Walkthrough of Editing a Task Diagram Step 1](images/EditTaskDiagram1.png)
+
+  ![Walkthrough of Editing a Task Diagram Step 1](images/EditTaskDiagram1.png)
 
 2. The result box will display a message to indicate that you executed the command successfully.
-![Walkthrough of Editing a Task Diagram Step 2](images/EditTaskDiagram2.png)
+
+  ![Walkthrough of Editing a Task Diagram Step 2](images/EditTaskDiagram2.png)
 
 3. You edited a task in the task list as shown below.
-![Walkthrough of Editing a Task Diagram Step 3](images/EditTaskDiagram3.png)
+
+  ![Walkthrough of Editing a Task Diagram Step 3](images/EditTaskDiagram3.png)
 
 #### Deleting a Project/Task: `delete`
 
@@ -464,7 +471,7 @@ Suppose you would like to delete the first project in the list
 
 ![Delete1](images/Delete1.png)
 
-1. Type `delete 1` into the command box and press >kbd>Enter</kbd>
+1. Type `delete 1` into the command box and press <kbd>Enter</kbd>
 
     ![Delete2](images/Delete2.png)
     
