@@ -169,7 +169,7 @@ You may also have to enter both dates and times together. When entered together,
 
    * `delete 3` : Delete the 3rd item shown in the current list.
 
-   * `find n/NewMomentum` : Find an item that has `NewMomentum` in its name.
+   * `find n/NewMomentum` : Find items that have `NewMomentum` in their name.
 
    * `list` : List all items based on the current view mode.
 
@@ -187,6 +187,8 @@ Refer to the [Features](#features) below for a more comprehensive set of feature
 
 ## 4. User Interface Overview
 
+Done by: Khoo De Hui
+
 Momentum uses a graphical user interface (GUI) to interact with you. This is where you will give your input, and where Momentum will display information to you. This section will give you a walkthrough on the GUI of Momentum.
 
 ### 4.1. User Interface Components
@@ -200,15 +202,15 @@ With reference to the numbered labels in Figure 4.1A, these are the GUI componen
 
 1. **Menu Bar**: The menu bar allows you to exit the application, or view this document. To exit the application, click on the `File` button and select `Exit`. To view this document, click on the `Help` button and select `User Guide`. A window containing the website address to this guide should appear.
 
-2. **Command Box**: This is where you will enter in your commands. After typing your command, hit <kbd>Enter</kbd> to execute them. If you enter an invalid command, your input will turn red.
+2. **Command Box**: This is where you will enter in your commands. After typing your command, press <kbd>Enter</kbd> to execute them. If you enter an invalid command, your input will turn red.
 
 3. **Result Box**: This is where Momentum will give you feedback on commands that you execute.
 
-4. **Displayed List**: Displays a list of your items and all the information pertaining to them.
+4. **Displayed List**: This is where a list of your items and all the information pertaining to them will be displayed.
 
 5. **Reminders Panel**: This is where your [reminders](#reminders) will appear. The panel will only show when you have reminders that have not yet been dismissed.
 
-6. **Active Timers Panel**: Displays a list of all your running [timers](#active-timers-panel).
+6. **Active Timers Panel**: This is where a list of all of your running [timers](#active-timers-panel) will be displayed.
 
 7. **Statistics Panel**: Displays the [statistics](#statistics) of your time usage calculated by Momentum.
 
@@ -251,7 +253,7 @@ Apart from the name, all other information is optional.
 
 Each project can also contain several tasks, each with the same information as a project.
 
-When you first open Momentum, you will see all the projects being tracked in Momentum. You can then view the tasks for each project separately using the [view command](#viewing-a-projects-tasks-view)]
+When you first open Momentum, you will see all the projects being tracked in Momentum. You can then view the tasks for each project separately using the [view command](#viewing-a-projects-tasks-view).
 
 <div markdown="block" class="alert alert-info">
 
@@ -465,7 +467,7 @@ The following walkthrough shows how you can edit a task in Momentum.
 
     ![Walkthrough of Editing a Task Diagram Step 2](images/EditTaskDiagram2.png)
 
-3. You edited a task in the task list as shown below.
+3. You have edited task 3 as shown below.
 
     ![Walkthrough of Editing a Task Diagram Step 3](images/EditTaskDiagram3.png)
 
@@ -486,7 +488,7 @@ Result: Deletes the second item in the list.
 
 The following walkthrough shows how you can delete a task in Momentum.
 
-Suppose you would like to delete the first project in the list
+Suppose you would like to delete the first project in the list.
 
 ![Delete1](images/Delete1.png)
 
@@ -529,13 +531,13 @@ In addition to the above sort types and orders, the list can be sorted by comple
 
 * `sort c/` will toggle the default completion status sort.
 
-    * Once the completion status sort is off, the items will be sorted in the specified sort type and order without regard for their completion status.
+    * Once the completion status sort is `off`, the items will be sorted in the specified sort type and order without regard for their completion status.
 
 <div markdown="block" class="alert alert-info">
 
 :bulb: Here are some things you should take note of.
 
-* When the application first starts, the completion status order is turned on. This completion status sort status (on/off) is maintained until it is toggled.
+* When the application first starts, the completion status order is turned `on`. This completion status sort status (`on`/`off`) is maintained until it is toggled.
 
 * `type/alpha` and `order/asc` will be used as default if both sort type and order are not specified. For example, when the command is `sort`.
 
@@ -561,7 +563,7 @@ The following walkthrough shows how you can sort projects in Momentum by the def
 
     ![Default Sort Step 2](images/DefaultSort2.png)
 
-3. All projects are ordered in default ascending alphabetical order with incomplete tasks showing up at the top of the list (Completion status sort is on).
+3. All projects are ordered in default ascending alphabetical order with incomplete tasks showing up at the top of the list (completion status order is `on`).
 
     ![Default Sort Step 3](images/DefaultSort3.png)
 
@@ -569,7 +571,7 @@ The following walkthrough shows how you can sort projects in Momentum by the def
 
 Format: `sort c/`
 
-This toggles the completion status order. For example, if the completion status order is `on`, the completion status order is turned `off`, vice versa.
+This toggles the completion status order. For example, if the completion status order is `on`, it will be turned `off`, vice versa.
 
 The following walkthrough shows how you can toggle the completion status order in Momentum.
 
@@ -1027,11 +1029,11 @@ You can perform time tracking with the following steps:
 
     ![TimerExample6](images/TimerExample6.png)
 
-6. You should also see that the project has been removed from the active timers panel:
+6. You should also see that the project has been removed from the active timers panel.
 
     ![TimerExample7](images/TimerExample7.png)
 
-8. The [statistics panel](#statistics) will also be updated to reflect the time that you have spent working on the project:
+7. The [statistics panel](#statistics) will also be updated to reflect the time that you have spent working on the project.
 
     ![TimerExample8](images/TimerExample8.png)
 
@@ -1342,8 +1344,6 @@ Result: Exits the program.
 ## 7. Glossary
 
 * **Command Line Interface(CLI)**: Command Line Interface processes commands in the form of text.
-
-* **Mainstream OS**: Windows, Linux, Unix, OS-X
 
 * **Project View**: View all projects in the project book.
 
