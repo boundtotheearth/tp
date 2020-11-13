@@ -10,7 +10,7 @@ title: User Guide
 {:toc}
 
 --------------------------------------------------------------------------------------------------------------------
-## Introduction
+## 1. Introduction
 
 Attention all freelancers, here is an application you have always wanted, but never got to experience!
 
@@ -37,10 +37,10 @@ We present you Momentum, the application that will make sure you never lose your
 
 Momentum is a Command Line Interface (CLI) application equipped with Graphical User Interface (GUI) that is interactive, visually appealing, and easy to use. This means everything within our application can be done with just your keyboard, which provides a user-friendly experience for you. 
 
-## About this Document
+## 2. About this Document
 This user guide provides detailed explanations and walkthroughs on the features available in Momentum. If you wish to learn how to use Momentum, this guide is for you. While reading this document, here are a few things you should take note of.
 
-### Notations Used
+### 2.1. Notations Used
 Throughout this document, you will come across these notations:
 
 * **Clickable Links**: Words or phrases that are blue in colour are links which you can click on that will take you over to the section or page as described. For example, clicking on [this](#introduction) will take you back to the introduction of the user guide. 
@@ -64,7 +64,7 @@ Throughout this document, you will come across these notations:
 * **Terminology**: Momentum tracks both projects and tasks. In this document, we will refer to both projects and tasks as items. 
 
 
-### Command Format
+### 2.2. Command Format
 
 You will be presented with multiple commands throughout this document. You may find the description of the command format below.
 
@@ -84,17 +84,17 @@ You will be presented with multiple commands throughout this document. You may f
   e.g. If the command specifies `n/Blog Design dd/2020-11-05`, `dd/2020-11-05 n/Blog Design` is also acceptable.
 
 
-#### Index Format
+#### 2.2.1. Index Format
 
 * You need to enter an id which refers to the id number shown in the displayed list.
 
 * You need to enter a **positive number** such as 1, 2, 3, …​
 
-### Date and Time Terms
+### 2.3. Date and Time Terms
 
 This is a guide to the date and time formats used in Momentum.
 
-#### Date Terms
+#### 2.3.1. Date Terms
 
 Dates should be entered in the order `YYYY-MM-DD`.
 
@@ -112,7 +112,7 @@ Term  | Meaning | Example
 
 **Invalid**: `2nd August 2020` You cannot use text to enter dates.
 
-#### Time Terms
+#### 2.3.2. Time Terms
 
 Times should be entered in 24 hour format, in the order `HH:MM:SS`.
 
@@ -130,7 +130,7 @@ SS   | Second  | `03`
 
 **Invalid**: `03:08:02PM` Only 24 hour time is accepted.
 
-#### Combining Date and Time
+#### 2.3.3. Combining Date and Time
 
 You may also have to enter both dates and times together. When entered together, dates and times should be entered in the order `YYYY-MM-DDTHH:MM:SS`. The letter `T` separates the date and time.
 
@@ -138,7 +138,7 @@ You may also have to enter both dates and times together. When entered together,
 
 **Invalid**: `15:08:02T2020-08-02` Wrong order of date and time.
 
-## Quick Start<a name="quick-start"></a>
+## 3. Quick Start<a name="quick-start"></a>
 
 1. Ensure you have Java `11` or above installed in your computer.
 
@@ -179,11 +179,11 @@ Refer to the [Features](#features) below for a more comprehensive set of feature
 
 --------------------------------------------------------------------------------------------------------------------
 
-## User Interface Overview
+## 4. User Interface Overview
 
 Momentum uses a graphical user interface (GUI) to interact with you. This is where you will give your input, and where Momentum will display information to you. This section will give you a walkthrough on the GUI of Momentum.
 
-### User Interface Components
+### 4.1. User Interface Components
 
 The GUI is made up of multiple components, which is shown in Figure X below.
 
@@ -198,7 +198,7 @@ With reference to the numbered labels in Figure X, these are the GUI components 
 
 3. **Result Box**: This is where Momentum will give you feedback on commands that you execute.
 
-4. **Displayed List**: Displays a list your projects or tasks and all the information pertaining to them.
+4. **Displayed List**: Displays a list of your items and all the information pertaining to them.
 
 5. **Reminders Panel**: This is where your [reminders](#reminders) will appear. The panel will only show when you have reminders that have not yet been dismissed.
 
@@ -216,7 +216,7 @@ With reference to the numbered labels in Figure X, these are the GUI components 
 
 </div>
 
-### User Interface Theme
+### 4.2. User Interface Theme
 
 The GUI of Momentum also comes with two themes, Light and Dark. These themes are merely cosmetic and do not affect the application functionality in any way. The themes are shown below:
 ![GUI Themes](images/UITheme.png)
@@ -224,8 +224,8 @@ Figure X: Momentum GUI theme
 
 By default, the theme of Momentum is set to Dark. If you want to adjust the theme, you can do so by changing it in the application [settings](#settings).
 
-## Features<a name="2-Features"></a>
-### Projects and Tasks<a name="3-Projects-and-Tasks"></a>
+## 5. Features<a name="2-Features"></a>
+### 5.1. Projects and Tasks<a name="3-Projects-and-Tasks"></a>
 
 Done by: Farrell Nah Jun Hao
 
@@ -253,7 +253,7 @@ Please refer to each command for these differences.
 
 </div>
 
-#### Viewing a Project's Tasks: `view`
+#### 5.1.1. Viewing a Project's Tasks: `view`
 
 Done by: Farrell Nah Jun Hao
 
@@ -284,7 +284,7 @@ Suppose you would like to view the tasks belonging to the 2nd project in the lis
 
     ![View4](images/View4.png)
 
-#### View Projects: `home`
+#### 5.1.2. View Projects: `home`
 
 Done by: Farrell Nah Jun Hao
 
@@ -309,7 +309,7 @@ The following walkthrough shows how you can use the home command to go from task
 
     ![Home3](images/Home3.png)
 
-#### Creating a Project/Task: `add`
+#### 5.1.3. Creating a Project/Task: `add`
 
 Done by: Cheong Ying Yi Clara
 
@@ -383,7 +383,7 @@ The following walkthrough shows how you can create a new project in Momentum.
 
     ![Walkthrough of Creating a Project Diagram Step 4](images/AddProjectDiagram4.png)
 
-#### Editing a Project/Task: `edit`
+#### 5.1.4. Editing a Project/Task: `edit`
 
 Done by Cheong Ying Yi Clara
 
@@ -461,7 +461,7 @@ The following walkthrough shows how you can edit a task in Momentum.
 
     ![Walkthrough of Editing a Task Diagram Step 3](images/EditTaskDiagram3.png)
 
-#### Deleting a Project/Task: `delete`
+#### 5.1.5. Deleting a Project/Task: `delete`
 
 Done by Farrell Nah Jun Hao
 
@@ -469,12 +469,12 @@ Deletes an item in the list.
 
 Format: `delete ID`
 
-* Deletes the project or task at the specified `ID`.
+* Deletes the item at the specified `ID`.
 * You can refer to [Index Term](#index-term) for more information.
 
 Example: `delete 2`
 
-Result: Deletes the second project or task in the list.
+Result: Deletes the second item in the list.
 
 The following walkthrough shows how you can delete a task in Momentum.
 
@@ -490,7 +490,7 @@ Suppose you would like to delete the first project in the list
 
     ![Delete3](images/Delete3.png)
 
-#### Sort Projects : `sort`
+#### 5.1.6. Sort Projects : `sort`
 
 Done by Kang Su Min
 
@@ -531,7 +531,7 @@ In addition to the above sort types and orders, the list can be sorted by comple
 
 * `type/alpha` and `order/asc` will be used as default if both sort type and order are not specified. For example, when the command is `sort`.
 
-* For both `sort type/deadline` and `sort type/created`, projects with the same deadline or same created date will be sorted in alphabetical order.
+* For both `sort type/deadline` and `sort type/created`, items with the same deadline or same created date will be sorted in alphabetical order.
 
 * For `sort type/deadline`, items with deadlines will appear at the top of the list sorted in deadline order, while those without deadlines will be pushed to the end of the list sorted in alphabetical order.
 
@@ -557,7 +557,7 @@ The following walkthrough shows how you can sort projects in Momentum by the def
 
     ![Default Sort Step 3](images/DefaultSort3.png)
 
-##### Sorting With Completion Status Toggle
+##### 5.1.6a. Sorting with Completion Status Toggle
 
 Format: `sort c/`
 
@@ -579,7 +579,7 @@ The following walkthrough shows how you can toggle the completion status order i
 
     ![Toggle Completion Status Step 3](images/ToggleCompletionStatus3.png)
 
-##### Sorting with Only Type Specified
+##### 5.1.6b. Sorting with Only Type Specified
 
 If you do not specify the sorting order, Momentum will assume that you would like to sort in ascending order.
 
@@ -603,7 +603,7 @@ The following walkthrough shows how you can sort projects in Momentum by specify
 
     ![Deadline Sort 3](images/DeadlineSort3.png)
 
-##### Sorting With Only Order Specified
+##### 5.1.6c. Sorting with Only Order Specified
 
 The current sort type is assumed if the `type` is not specified.
 
@@ -629,7 +629,7 @@ The following walkthrough shows how you can sort projects in Momentum by specify
 
     ![Deadline Sort Descending 3](images/DeadlineDescending3.png)
 
-##### Sorting With Both Type and Order Specified
+##### 5.1.6d. Sorting With Both Type and Order Specified
 
 This sorts items in the specified type and order.
 
@@ -653,7 +653,7 @@ The following walkthrough shows how you can sort projects in Momentum by specify
 
   Note that for projects with the same created date, they are sorted in descending alphabetical order.
 
-#### Searching for Items: `find`
+#### 5.1.7. Searching for Items: `find`
 
 Done by Balasubramaniam Praveen
 
@@ -665,7 +665,7 @@ Here are some ways you can make simple searches using the find command. Advanced
 
 <div markdown="block" class="alert alert-info">
 
-:bulb: You can only search for projects in the project view and tasks in the tasks view
+:bulb: You can only search for projects in the project view and tasks in the tasks view.
 
 </div>
 
@@ -675,7 +675,7 @@ Here are some ways you can make simple searches using the find command. Advanced
 
 </div>
 
-##### Searching by Name
+##### 5.1.7a. Searching by Name
 
 * The `n/` prefix checks whether an item has a certain name.
 
@@ -695,7 +695,7 @@ The following walkthrough shows how you can use the find command to search for i
 
     ![Find by Name Step 3](images/FindByName3.png)
 
-##### Searching by Description
+##### 5.1.7b. Searching by Description
 
 * The `d/` prefix checks whether an item has a certain description.
 
@@ -715,7 +715,7 @@ The following walkthrough shows how you can use the find command to search for i
 
     ![Find by Description Step 3](images/FindByDesc3.png)
 
-##### Searching by Tag
+##### 5.1.7c. Searching by Tag
 
 * The `t/` prefix checks whether an item has a certain tag.
 
@@ -741,7 +741,7 @@ The following walkthrough shows how you can use the find command to search for p
 
     ![Find by Tag Step 3](images/FindByTag3.png)
 
-##### Searching by Completion Status
+##### 5.1.7d. Searching by Completion Status
 
 * Only the parameters `completed` and `incomplete` are accepted for `c/KEYWORD`.
 
@@ -763,7 +763,7 @@ The following walkthrough shows how you can use the find command to search for p
 
     ![Find by Completion Step 3](images/FindByCompletion3.png)
 
-##### Searching by Multiple Parameters
+##### 5.1.7e. Searching by Multiple Parameters
 
 You can search for items with multiple parameters for names, descriptions and tags in a single search.
 
@@ -787,7 +787,7 @@ The following walkthrough shows you can use the find command to search for proje
 
 You can use the same method to search for projects using multiple parameters for name or tags. However, this will not work with completion status. You can only search by one completion status. 
 
-##### Searching by Multiple Prefixes
+##### 5.1.7f. Searching by Multiple Prefixes
 
 So far, you have learnt how to search for items that contain multiple parameters for a single prefix. But what if you want to search for items by multiple prefixes instead? 
 
@@ -818,7 +818,7 @@ You can also use multiple parameters for each prefix that allows for it as menti
 
 </div>
 
-##### Adding Match Type to Searches
+##### 5.1.7g. Adding Match Type to Searches
 
 So far, you have learnt how to make searches by multiple parameters and prefixes. However, the searches shown so far show an item as long as there is any one parameter that matches it. But this might not be useful in some cases. What if you need to search for an item that matches all parameters, or does not match any of the parameters entered.
 
@@ -895,7 +895,7 @@ The possibilities of using match type to enhance your searches are limitless. He
 
 2. If you have many items and want to find those that are not part of a certain category, you can use `match/none` to narrrow down your search results.
 
-#### View All Projects/Tasks: `list`
+#### 5.1.8. View All Projects/Tasks: `list`
 
 Done by Farrell Nah Jun Hao
 
@@ -930,7 +930,7 @@ Suppose you had previously executed a [find command](#searching-for-items-find) 
 
     ![List4](images/List4.png)
 
-### Time Tracking
+### 5.2. Time Tracking
 
 Done by Farrell Nah Jun Hao
 
@@ -938,7 +938,7 @@ You can track the time you spend working on a project or task by starting a time
 
 Momentum remembers each timer that you start/stop and uses this information to calculate statistics.
 
-#### Starting a Timer: `start`
+#### 5.2.1. Starting a Timer: `start`
 
 Format: `start ID`
 
@@ -966,7 +966,7 @@ Example: `start 2`
 
 Result: Starts a timer for the second item in the displayed list.
 
-#### Stopping a Timer: `stop`
+#### 5.2.2. Stopping a Timer: `stop`
 
 Format: `stop ID`
 
@@ -980,7 +980,7 @@ Example: `stop 2`
 
 Result: Stops the timer for the second item in the displayed list.
 
-#### Active Timers Panel
+#### 5.2.3. Active Timers Panel
 
 On the left side of the window is the Active Timers Panel. This is where Momentum shows you all the timers that are currently running.
 
@@ -989,9 +989,7 @@ Figure X: Location of the Active Timers Panel.
 
 This panel will show you the name of the item, as well as when the timer was started.
 
-#### Time Tracking Example
-
-Here is an example of how you can use the `start` and `stop` commands to track the time that you spend on a project.
+The following walkthrough shows how you can use the `start` and `stop` commands to track the time that you spend on a project.
 
 Suppose that you are going to start working on the project `Alpharad Youtube Endcard`, which is the first item shown below:
 
@@ -1029,7 +1027,7 @@ You can perform time tracking with the following steps:
 
     ![TimerExample8](images/TimerExample8.png)
 
-### Reminders
+### 5.3. Reminders
 
 Done by Cheong Ying Yi Clara
 
@@ -1041,7 +1039,7 @@ Done by Cheong Ying Yi Clara
 
 * You can refer to [Creating a Project](#creating-a-project-task-add) for more details on how you can add a reminder.
 
-#### Dismissing a Reminder : `dismiss`
+#### 5.3.1. Dismissing a Reminder : `dismiss`
 
 Done by Cheong Ying Yi Clara
 
@@ -1073,7 +1071,7 @@ This walkthrough is a followup of the walkthrough in [Creating a Project](#creat
 
    ![Walkthrough of Dismissing a Reminder Step 3](images/DismissDiagram3.png)
 
-### Showing and Hiding Tags : `show`
+### 5.4. Showing and Hiding Tags : `show`
 
 Done by Cheong Ying Yi Clara
 
@@ -1103,13 +1101,13 @@ The following walkthrough shows how you can hide the tags panel.
 
    ![Walkthrough of Hiding Tags Step 3](images/ShowDiagram3.png)
 
-### Undoing/Redoing
+### 5.5. Undoing/Redoing
 
 Done By Kang Su Min
 
 Momentum allows you to easily reverse any mistakes that you make with the `undo` and `redo` commands.
 
-#### Undoing the Previous Command: `undo`
+#### 5.5.1. Undoing the Previous Command: `undo`
 
 The undo command reverses the previous command that you executed. This allows you to revert changes that you have made to Momentum.
 
@@ -1137,7 +1135,7 @@ The following walkthrough shows how you can start a timer for a project, then un
 
    ![Undo 5](images/Undo5.png)
 
-#### Redoing the Previous Command: `redo`
+#### 5.5.2. Redoing the Previous Command: `redo`
 
 The redo command reverses the previous undo command that you executed. This allows you to revert the changes made by an undo command.
 
@@ -1185,7 +1183,7 @@ The following walkthough uses a change in [sort type](#sort-projects-sort) to sh
 
 </div>
 
-### Statistics
+### 5.6. Statistics
 
 Done by Farrell Nah Jun Hao
 
@@ -1201,7 +1199,7 @@ Figure X: The order of the statistics entries matches the order in the displayed
 
 You do not need to use any additional commands to update or view the statistics.
 
-#### Timeframes
+#### 5.6.1 Timeframes
 
 Momentum only tracks your statistics within a particular timeframe. You can change the timeframe through the [settings](#settings).
 
@@ -1215,7 +1213,7 @@ By default, the timeframe will be set to weekly.
 
 Here are the statistics being tracked by Momentum:
 
-#### Time Spent Per Project
+#### 5.6.2. Time Spent per Project/Task
 
 This statistic tells you the total amount of time you have spent within the timeframe. For projects, this includes all the time you have spent on each individual task, as well as on the project as a whole.
 
@@ -1228,7 +1226,7 @@ The statistics are displayed in 2 different formats:
 
 2. **Table**: Shows the exact (in minutes) amount of time spent on each item. Useful for calculations.
 
-### Settings
+### 5.7. Settings
 
 Done by Khoo De Hui
 
@@ -1265,7 +1263,7 @@ The following walkthrough shows how you can change the theme and settings timefr
 
    ![Settings Walkthrough Step 3](images/SettingsDiagram3.png)
 
-### Clear All Items : `clear`
+### 5.8. Clearing All Projects/Tasks : `clear`
 
 Done by Farrell Nah Jun Hao
 
@@ -1299,7 +1297,7 @@ The following walkthrough shows how you can clear all projects in Momentum
 
     ![ClearProject2](images/ClearProject2.png)
 
-### Viewing Help : `help`
+### 5.9. Viewing Help : `help`
 
 Shows a message explaning how to access the help page.
 
@@ -1308,7 +1306,7 @@ Figure X: The help window
 
 Format: `help`
 
-### Exiting the Program : `exit`
+### 5.10. Exiting the Program : `exit`
 
 All project, task and timer information are saved automatically after every command. There is no need to save manually.
 
@@ -1320,7 +1318,7 @@ Result: Exits the program.
 
 --------------------------------------------------------------------------------------------------------------------
 
-## FAQ
+## 6. FAQ
 
 **Q**: How do I transfer my data to another Computer? <br>
 **A**: Install the app in the other computer and overwrite the empty data file it creates with the file that contains the data of your previous Momentum home folder.
@@ -1333,7 +1331,7 @@ Result: Exits the program.
 
 --------------------------------------------------------------------------------------------------------------------
 
-## Glossary
+## 7. Glossary
 
 * **Command Line Interface(CLI)**: Command Line Interface processes commands in the form of text.
 
@@ -1349,7 +1347,7 @@ Result: Exits the program.
 
 --------------------------------------------------------------------------------------------------------------------
 
-## Command Summary
+## 8. Command Summary
 
 Action | Format | Example
 --------|-------|-----------
