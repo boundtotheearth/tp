@@ -6,7 +6,7 @@ title: User Guide
 ![Momentum Logo](images/logo.png)
 <div style="page-break-after: always;"></div>
 
-* Table of Contents
+#Table of Contents
 {:toc}
 
 --------------------------------------------------------------------------------------------------------------------
