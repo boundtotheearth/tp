@@ -251,7 +251,7 @@ Apart from the name, all other information is optional.
 
 Each project can also contain several tasks, each with the same information as a project.
 
-When you first open Momentum, you will see all the projects being tracked in Momentum. You can then view the tasks for each project separately using the [view command](#511-viewing-a-projects-tasks-view)]
+When you first open Momentum, you will see all the projects being tracked in Momentum. You can then view the tasks for each project separately using the [view command](#511-viewing-a-projects-tasks-view)
 
 <div markdown="block" class="alert alert-info">
 
@@ -545,7 +545,7 @@ In addition to the above sort types and orders, the list can be sorted by comple
 
 </div>
 
-**Sorting by Default Order**
+##### 5.1.6a. Sorting by Default Order**
 
 Format: `sort`
 
@@ -565,7 +565,7 @@ The following walkthrough shows how you can sort projects in Momentum by the def
 
     ![Default Sort Step 3](images/DefaultSort3.png)
 
-##### 5.1.6a. Sorting with Completion Status Toggle
+##### 5.1.6b. Sorting with Completion Status Toggle
 
 Format: `sort c/`
 
@@ -587,7 +587,7 @@ The following walkthrough shows how you can toggle the completion status order i
 
     ![Toggle Completion Status Step 3](images/ToggleCompletionStatus3.png)
 
-##### 5.1.6b. Sorting with Only Type Specified
+##### 5.1.6c. Sorting with Only Type Specified
 
 If you do not specify the sorting order, Momentum will assume that you would like to sort in ascending order.
 
@@ -611,7 +611,7 @@ The following walkthrough shows how you can sort projects in Momentum by specify
 
     ![Deadline Sort 3](images/DeadlineSort3.png)
 
-##### 5.1.6c. Sorting with Only Order Specified
+##### 5.1.6d. Sorting with Only Order Specified
 
 The current sort type will be used if the `type` is not specified.
 
@@ -637,7 +637,7 @@ The following walkthrough shows how you can sort projects in Momentum by specify
 
     ![Deadline Sort Descending 3](images/DeadlineDescending3.png)
 
-##### 5.1.6d. Sorting With Both Type and Order Specified
+##### 5.1.6e. Sorting With Both Type and Order Specified
 
 This sorts items in the specified type and order.
 
