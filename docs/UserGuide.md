@@ -1,6 +1,6 @@
 ---
 layout: page
-title: User Guide
+title: 
 ---
 
 ![Momentum Logo](images/logo.png)
@@ -78,13 +78,13 @@ You will be presented with multiple commands throughout this document. You may f
   e.g. in `add n/NAME`, `NAME` is a parameter which can be used as `add n/Blog Design`, whereas the `n/` signifies that the parameter is being used in the name.
 
 * Items in square brackets are optional.
-  e.g `n/NAME [t/TAG]` can be used as `n/Blog Design t/friend` or as `n/Blog Design`.
+  e.g. `n/NAME [t/TAG]` can be used as `n/Blog Design t/friend` or as `n/Blog Design`.
 
-* Items with `…`​ after them can be used multiple times including zero times.
-  e.g. `[t/TAG]…​` can be used as ` ` (i.e. 0 times), `t/friend`, `t/friend t/family` etc.
+* Items with `…` after them can be used multiple times including zero times.
+  e.g. `[t/TAG]…` can be used as ` ` (i.e. 0 times), `t/friend`, `t/friend t/family` etc.
 
 * Items with `…` inside square brackets `[t/TAG [MORE_TAGS]...]` can take in multiple space separated arguments
-  e.g. `[[t/TAG [MORE_TAGS]...]` can represent `t/friend friend family`.
+  e.g. `[[t/TAG [MORE_TAGS]...]` can represent `t/friend family`.
 
 * Parameters can be in any order.
   e.g. If the command specifies `n/Blog Design dd/2020-11-05`, `dd/2020-11-05 n/Blog Design` is also acceptable.
@@ -94,7 +94,7 @@ You will be presented with multiple commands throughout this document. You may f
 
 * You need to enter an id which refers to the id number shown in the displayed list.
 
-* You need to enter a **positive number** such as 1, 2, 3, …​
+* You need to enter a **positive number** such as 1, 2, 3, …
 
 ### 2.3. Date and Time Terms
 
@@ -346,7 +346,7 @@ Format: `add n/NAME [d/DESCRIPTION] [c/] [dd/DEADLINE_DATE [dt/DEADLINE_TIME]] [
 
 * `[dd/DEADLINE_DATE [dt/DEADLINE_TIME]]`
 
-  * Note that `dt/DEADLINE_TIME` is an optional part of the the `dd/`. You cannot enter a deadline with time only.
+  * Note that `dt/DEADLINE_TIME` is an optional part of the `dd/`. You cannot enter a deadline with time only.
 
   * You can enter a deadline with date only.
 
@@ -434,7 +434,7 @@ Format: `edit ID [n/NAME] [d/DESCRIPTION] [c/] [dd/DEADLINE_DATE [dt/DEADLINE_TI
 
 * `[dd/DEADLINE_DATE [dt/DEADLINE_TIME]]`
 
-  * Note that `dt/DEADLINE_TIME` is an optional part of the the `dd/`. You cannot enter a deadline with time only.
+  * Note that `dt/DEADLINE_TIME` is an optional part of the `dd/`. You cannot enter a deadline with time only.
 
   * You can enter a deadline with date only.
 
@@ -499,7 +499,7 @@ Suppose you would like to delete the first project in the list.
 
     ![Delete2](images/Delete2.png)
     
-2. The results box will display a message to indicate that the project has been successfully deleted. You should no long see the project in the displayed list.
+2. The results box will display a message to indicate that the project has been successfully deleted. You should no longer see the project in the displayed list.
 
     ![Delete3](images/Delete3.png)
 
@@ -827,7 +827,7 @@ You can also use multiple parameters for each prefix that allows for it as menti
 <div markdown="block" class="alert alert-info">
 
 :bulb: If a certain search prefix is used more than once, the last entry will be used.
-`find n/a n/b n/c` will only search for items that contain`c` in their name.
+`find n/a n/b n/c` will only search for items that contains `c` in their name.
 
 </div>
 
@@ -1070,7 +1070,7 @@ Result: The reminder panel of the sidebar will be hidden.
 
 The following walkthrough shows how you can dismiss a reminder.
 
-This walkthrough is a followup of the walkthrough in [Creating a Project/Task](#513-creating-a-projecttask-add).
+This walkthrough is a follow-up of the walkthrough in [Creating a Project/Task](#513-creating-a-projecttask-add).
 
 1. After the reminder panel is shown, you can type `dismiss` in the command box, and press the <kbd>Enter</kbd> key to execute it.
 
@@ -1154,7 +1154,7 @@ The redo command reverses the previous undo command that you executed. This allo
 
 Format: `redo`
 
-The following walkthough uses a change in [sort type](#516-sorting-projectstasks--sort) to show how you can redo the changes made by an undo command.
+The following walkthrough uses a change in [sort type](#516-sorting-projectstasks--sort) to show how you can redo the changes made by an undo command.
 
 1. Key in command `sort type/deadline` in the command box then press <kbd>Enter</kbd>.
 
@@ -1290,7 +1290,7 @@ This command will also delete the saved data.
 You can undo this operation while Momentum remains open.
 However, you will not be able to undo this once you close Momentum.
 
-Please be careful when using this command, as you may loose large amounts of your data.
+Please be careful when using this command, as you may lose large amounts of your data.
 
 </div>
 
@@ -1306,7 +1306,7 @@ The following walkthrough shows how you can clear all projects in Momentum
     
     ![ClearProject1](images/ClearProject1.png)
 
-3. The result box will display a message to indicate that all projects have been cleared. You should no long see any projects in the displayed list.
+3. The result box will display a message to indicate that all projects have been cleared. You should no longer see any projects in the displayed list.
 
     ![ClearProject2](images/ClearProject2.png)
 
@@ -1336,10 +1336,10 @@ Result: Exits the program.
 **Q**: How do I transfer my data to another Computer? <br>
 **A**: Install the app in the other computer and overwrite the empty data file it creates with the file that contains the data of your previous Momentum home folder.
 
-**Q**: Momentum is showing "Dates and Times should be in ISO8601 format. e.g. 2020-09-23T16:55:12". Whats wrong? <br>
+**Q**: Momentum is showing "Dates and Times should be in ISO8601 format. e.g. 2020-09-23T16:55:12". What’s wrong? <br>
 **A**: You have entered a date and/or time in the wrong format. Please refer to the [date and time terms](#23-date-and-time-terms) for the correct format to use.
 
-**Q**: Momentum is showing "Unknown Command". Whats wrong? <br>
+**Q**: Momentum is showing "Unknown Command". What’s wrong? <br>
 **A**: You have entered a command that is not recognised by Momentum. Please refer to the [command summary](#8-command-summary) for a list of commands that you can enter into Momentum.
 
 --------------------------------------------------------------------------------------------------------------------
@@ -1363,7 +1363,7 @@ Result: Exits the program.
 Action | Format | Example
 --------|-------|-----------
 **Clearing all Items** | `clear` | -
-**Creating an Item** | `add n/NAME [d/DESCRIPTION] [c/] [dd/DEADLINE_DATE [dt/DEADLINE_TIME]] [r/REMINDER_DATE_TIME] [t/TAG]​`|  `project n/Momentum d/CS2103T Team Project dd/2021-12-07 t/impt`
+**Creating an Item** | `add n/NAME [d/DESCRIPTION] [c/] [dd/DEADLINE_DATE [dt/DEADLINE_TIME]] [r/REMINDER_DATE_TIME] [t/TAG]`|  `project n/Momentum d/CS2103T Team Project dd/2021-12-07 t/impt`
 **Deleting an Item** | `delete ID` | `delete 3`
 **Dismissing a Reminder** | `dismiss` | -
 **Editing an Item** | `edit ID [n/NAME] [d/DESCRIPTION] [c/]  [dd/DEADLINE_DATE [dt/DEADLINE_TIME]] [r/REMINDER_DATE_TIME] [t/TAG]`| `edit 3 n/NewMomentum d/NewDescription dd/2021-12-07 r/2021-12-07T01:21:21 t/normal`
@@ -1380,3 +1380,4 @@ Action | Format | Example
 **Undoing** | `undo` | -
 **Viewing all Projects**| `home` | -
 **Viewing Tasks in a Project**| `view ID` |`view 3`
+
