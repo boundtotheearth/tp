@@ -86,9 +86,9 @@ You will be presented with multiple commands throughout this document. You may f
 
 #### Index Format
 
-* You need to enter an id which refers to the id number shown in the displayed project/task list.
+* You need to enter an id which refers to the id number shown in the displayed list.
 
-* You need to enter a **positive integer** such as 1, 2, 3, …​
+* You need to enter a **positive number** such as 1, 2, 3, …​
 
 ### Date and Time Terms
 
@@ -159,19 +159,19 @@ You may also have to enter both dates and times together. When entered together,
 
    * `add n/Momentum d/CS2103T Team Project` : Add a project named `Momentum` to the Project Book in project view. Add a task named `Momentum` to the project in task view.
 
-   * `edit 3 n/NewMomentum d/newDescription` : Update the 3rd project/task in the current list. The name will be changed to `NewMomentum` and the description will be changed to `NewDescription`.
+   * `edit 3 n/NewMomentum d/newDescription` : Update the 3rd item in the current list. The name will be changed to `NewMomentum` and the description will be changed to `NewDescription`.
 
-   * `delete 3` : Delete the 3rd project/task shown in the current list.
+   * `delete 3` : Delete the 3rd item shown in the current list.
 
-   * `find n/NewMomentum` : Find a project/task that has `NewMomentum` in its name.
+   * `find n/NewMomentum` : Find an item that has `NewMomentum` in its name.
 
-   * `list` : List all projects or tasks based on the current view mode.
+   * `list` : List all items based on the current view mode.
 
    * `sort type/deadline order/asc` : Sort the list of items by deadline in ascending order.
 
-   * `start 1` : Start the timer of project/task at index 1.
+   * `start 1` : Start the timer of the item at index 1.
 
-   * `stop 1` : Stop the timer of project/task at index 1.
+   * `stop 1` : Stop the timer of the item at index 1.
 
    * `exit` : Exit the app.
 
@@ -247,8 +247,8 @@ When you first open Momentum, you will see all the projects being tracked in Mom
 
 <div markdown="block" class="alert alert-info">
 
-**:bulb: Most commands in Momentum will do different things depending on whether you are viewing projects or tasks
-.**<br>
+**:bulb: Most commands in Momentum will do different things depending on whether you are viewing projects or tasks.**<br>
+
 Please refer to each command for these differences.
 
 </div>
@@ -319,9 +319,9 @@ Format: `add n/NAME [d/DESCRIPTION] [c/] [dd/DEADLINE_DATE [dt/DEADLINE_TIME]] [
 
 * `[c/]`
 
-  * The project/task added will be incomplete by default.
+  * The item added will be incomplete by default.
 
-  * You can add a project/task with completion status complete by entering `c/`. <br>
+  * You can add an item with completion status complete by entering `c/`. <br>
 
 * `[dd/DEADLINE_DATE [dt/DEADLINE_TIME]]`
 
@@ -335,7 +335,7 @@ Format: `add n/NAME [d/DESCRIPTION] [c/] [dd/DEADLINE_DATE [dt/DEADLINE_TIME]] [
 
   <div markdown="block" class="alert alert-danger">
 
-  :warning: You cannot enter a date earlier than the creation date of the project/task for deadlines.
+  :warning: You cannot enter a date earlier than the creation date of the item for deadlines.
 
   </div>
 
@@ -385,7 +385,7 @@ Format: `edit ID [n/NAME] [d/DESCRIPTION] [c/] [dd/DEADLINE_DATE [dt/DEADLINE_TI
 
 * You need to provide at least one of the optional fields.
 
-* Your input will override the existing values of the project/task edited.
+* Your input will override the existing values of the item edited.
 
 <div markdown="block" class="alert alert-info">
 
@@ -407,9 +407,9 @@ Format: `edit ID [n/NAME] [d/DESCRIPTION] [c/] [dd/DEADLINE_DATE [dt/DEADLINE_TI
 
 * `[c/]`
 
-  * You can change the completion status of a project/task by entering `c/`.
+  * You can change the completion status of an item by entering `c/`.
 
-  * If the project/task was incomplete, the completion status will change to complete.
+  * If the item was incomplete, the completion status will change to complete.
 
 * `[dd/DEADLINE_DATE [dt/DEADLINE_TIME]]`
 
@@ -431,7 +431,7 @@ Format: `edit ID [n/NAME] [d/DESCRIPTION] [c/] [dd/DEADLINE_DATE [dt/DEADLINE_TI
 
   * Similar to names, you can enter alphanumeric characters (a-Z, 0-9) and spaces in tags.
 
-  * Momentum will replace all the existing tags of the project/task with the new tags that you added.
+  * Momentum will replace all the existing tags of the item with the new tags that you added.
 
   <div markdown="block" class="alert alert-info">
 
@@ -457,7 +457,7 @@ The following walkthrough shows how you can edit a task in Momentum.
 
 Done by Farrell Nah Jun Hao
 
-Deletes a project or task in the list.
+Deletes an item in the list.
 
 Format: `delete ID`
 
@@ -507,7 +507,7 @@ Format: `sort [type/SORT_TYPE] [order/SORT_ORDER] [c/]`
 
 In addition to the above sort types and orders, the list can be sorted by completion status.
 
-* This is the "dominant sort" that will ensure that all incomplete projects/tasks are above complete items, before sorting the items in the specified sort type and order above.
+* This is the "dominant sort" that will ensure that all incomplete items are above complete items, before sorting the items in the specified sort type and order above.
 
 * The default sort order will sort the items by completion status.
 
@@ -669,11 +669,11 @@ Here are some ways you can make simple searches using the find command. Advanced
 
 ##### Searching by Name
 
-* The `n/` prefix checks whether a project has a certain name.
+* The `n/` prefix checks whether an item has a certain name.
 
-* Searching by name only requires a partial match. This means that a project with the name `carpet` and `car` can potentially be the result of searching for the term `car`.
+* Searching by name only requires a partial match. This means that an item with the name `carpet` and `car` can potentially be the result of searching for the term `car`.
 
-The following walkthrough shows how you can use the find command to search for projects with `ad` in their name.
+The following walkthrough shows how you can use the find command to search for items with `ad` in their name.
 
 1. Key in the command `find n/ad` in the command box and press <kbd>Enter</kbd>.
 
@@ -887,7 +887,7 @@ The possibilities of using match type to enhance your searches are limitless. He
 
 2. If you have many items and want to find those that are not part of a certain category, you can use `match/none` to narrrow down your search results.
 
-#### View All : `list`
+#### View All Projects/Tasks: `list`
 
 Done by Farrell Nah Jun Hao
 
@@ -930,7 +930,7 @@ You can track the time you spend working on a project or task by starting a time
 
 Momentum remembers each timer that you start/stop and uses this information to calculate statistics.
 
-#### Starting a Timer for a Project: `start`
+#### Starting a Timer: `start`
 
 Format: `start ID`
 
@@ -958,7 +958,7 @@ Example: `start 2`
 
 Result: Starts a timer for the second item in the displayed list.
 
-#### Stopping a Timer for a Project: `stop`
+#### Stopping a Timer: `stop`
 
 Format: `stop ID`
 
@@ -1049,7 +1049,7 @@ Result: The reminder panel of the sidebar will be hidden.
 
 </div>
 
-#### Walkthrough of Dismissing a Reminder
+The following walkthrough shows how you can dismiss a reminder.
 
 This walkthrough is a followup of the walkthrough in [Creating a Project](#creating-a-project-task-add).
 
@@ -1081,7 +1081,7 @@ Result: The visibility of the tags panel will be toggled.
 
 </div>
 
-#### Walkthrough of Hiding Tags
+The following walkthrough shows how you can hide the tags panel.
 
 1. You can type `show t/` in the command box, and press the <kbd>Enter</kbd> key to execute it.
 
