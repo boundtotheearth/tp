@@ -6,7 +6,7 @@ title: User Guide
 ![Momentum Logo](images/logo.png)
 <div style="page-break-after: always;"></div>
 
-## 0. Table of Contents
+## Table of Contents
 
 * Table of Contents
 {:toc}
@@ -196,6 +196,8 @@ You may also have to enter both dates and times together. When entered together,
 Refer to the [Features](#5-features) below for a more comprehensive set of features available in Momentum.
 
 --------------------------------------------------------------------------------------------------------------------
+
+<div style="page-break-after: always;"></div>
 
 ## 4. User Interface Overview
 
