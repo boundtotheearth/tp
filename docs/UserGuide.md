@@ -185,12 +185,12 @@ Momentum uses a graphical user interface (GUI) to interact with you. This is whe
 
 ### 4.1. User Interface Components
 
-The GUI is made up of multiple components, which is shown in Figure X below.
+The GUI is made up of multiple components, which is shown in Figure 4.1A below.
 
 ![OverviewUI](images/OverviewUI2.png)
-Figure X: GUI of Momentum with different components marked out.
+Figure 4.1A: GUI of Momentum with different components marked out.
 
-With reference to the numbered labels in Figure X, these are the GUI components and their functions:
+With reference to the numbered labels in Figure 4.1A, these are the GUI components and their functions:
 
 1. **Menu Bar**: The menu bar allows you to exit the application, or view this document. To exit the application, click on the `File` button and select `Exit`. To view this document, click on the `Help` button and select `User Guide`. A window containing the website address to this guide should appear.
 
@@ -219,8 +219,10 @@ With reference to the numbered labels in Figure X, these are the GUI components 
 ### 4.2. User Interface Theme
 
 The GUI of Momentum also comes with two themes, Light and Dark. These themes are merely cosmetic and do not affect the application functionality in any way. The themes are shown below:
+
 ![GUI Themes](images/UITheme.png)
-Figure X: Momentum GUI theme
+
+Figure 4.2A: Momentum GUI theme
 
 By default, the theme of Momentum is set to Dark. If you want to adjust the theme, you can do so by changing it in the application [settings](#settings).
 
@@ -284,7 +286,7 @@ Suppose you would like to view the tasks belonging to the 2nd project in the lis
 
     ![View4](images/View4.png)
 
-#### 5.1.2. View Projects: `home`
+#### 5.1.2. Viewing Projects: `home`
 
 Done by: Farrell Nah Jun Hao
 
@@ -490,7 +492,7 @@ Suppose you would like to delete the first project in the list
 
     ![Delete3](images/Delete3.png)
 
-#### 5.1.6. Sort Projects : `sort`
+#### 5.1.6. Sorting Projects/Tasks : `sort`
 
 Done by Kang Su Min
 
@@ -653,7 +655,7 @@ The following walkthrough shows how you can sort projects in Momentum by specify
 
     Note that for projects with the same created date, they are sorted in descending alphabetical order.
 
-#### 5.1.7. Searching for Items: `find`
+#### 5.1.7. Searching for Projects/Tasks: `find`
 
 Done by Balasubramaniam Praveen
 
@@ -895,7 +897,7 @@ The possibilities of using match type to enhance your searches are limitless. He
 
 2. If you have many items and want to find those that are not part of a certain category, you can use `match/none` to narrrow down your search results.
 
-#### 5.1.8. View All Projects/Tasks: `list`
+#### 5.1.8. Viewing All Projects/Tasks: `list`
 
 Done by Farrell Nah Jun Hao
 
@@ -985,7 +987,7 @@ Result: Stops the timer for the second item in the displayed list.
 On the left side of the window is the Active Timers Panel. This is where Momentum shows you all the timers that are currently running.
 
 ![ActiveTimersUI](images/ActiveTimersUI.png)
-Figure X: Location of the Active Timers Panel.
+Figure 5.2.3A: Location of the Active Timers Panel.
 
 This panel will show you the name of the item, as well as when the timer was started.
 
@@ -1190,12 +1192,12 @@ Done by Farrell Nah Jun Hao
 Momentum uses the data collected from your [timers](#time-tracking) to calculate statistics. These statistics are automatically generated and updated whenever you make any changes to your items, such as when you start or stop a new timer. They can be seen in a panel on the left side of the window, as shown here:
 
 ![StatisticsUI1](images/StatsUI1.png)
-Figure X: Location of the statistics panel
+Figure 5.6A: Location of the statistics panel
 
 The order of the statistics displayed correspond to the items currently shown in the displayed list, and will automatically change when the items in the displayed list changes (such as when you [find specific items](#searching-for-items-find) or [sort the list of items](#sort-projects-sort)).
 
 ![StatisticsUI2](images/StatsUI2.png)
-Figure X: The order of the statistics entries matches the order in the displayed list.
+Figure 5.6B: The order of the statistics entries matches the order in the displayed list.
 
 You do not need to use any additional commands to update or view the statistics.
 
@@ -1218,7 +1220,7 @@ Here are the statistics being tracked by Momentum:
 This statistic tells you the total amount of time you have spent within the timeframe. For projects, this includes all the time you have spent on each individual task, as well as on the project as a whole.
 
 ![StatsUISplit](images/StatsUISplit.png)
-Figure X: Sections of the statistics panel.
+Figure 5.6.2A: Sections of the statistics panel.
 
 The statistics are displayed in 2 different formats:
 
@@ -1302,7 +1304,7 @@ The following walkthrough shows how you can clear all projects in Momentum
 Shows a message explaning how to access the help page.
 
 ![help message](images/helpMessage.png)
-Figure X: The help window
+Figure 5.9A: The help window
 
 Format: `help`
 
