@@ -61,7 +61,7 @@ Throughout this document, you will come across these notations:
 
 * **Keyboard Keys**: Words that are wrapped in a box like <kbd>this</kbd> points to a corresponding key on your keyboard.
 
-* **Terminology**: Momentum tracks both projects and tasks. In this document, we will refer to both projects and tasks as items. 
+* **Terminology**: Momentum tracks both your projects and tasks. In this document, if we are referring to both projects and tasks at the same time, we will use the term "item". 
 
 
 ### Command Format
