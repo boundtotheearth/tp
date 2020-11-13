@@ -398,7 +398,7 @@ The following walkthrough shows how you can create a new project in Momentum.
 
 #### 5.1.4. Editing a Project/Task: `edit`
 
-Done by Cheong Ying Yi Clara
+(Cheong Ying Yi Clara)
 
 When Momentum is in [project view](#7-glossary), you can use the edit command to edit a project. When Momentum is in [task view](#7-glossary), you can use the edit command to edit a task for the project that you are viewing.
 
@@ -476,7 +476,7 @@ The following walkthrough shows how you can edit a task in Momentum.
 
 #### 5.1.5. Deleting a Project/Task: `delete`
 
-Done by Farrell Nah Jun Hao
+(Farrell Nah Jun Hao)
 
 Deletes an item in the list.
 
@@ -505,7 +505,7 @@ Suppose you would like to delete the first project in the list.
 
 #### 5.1.6. Sorting Projects/Tasks : `sort`
 
-Done by Kang Su Min
+(Kang Su Min)
 
 This command allows you to sort the list of displayed items in a particular sort type and order.
 
@@ -668,7 +668,7 @@ The following walkthrough shows how you can sort projects in Momentum by specify
 
 #### 5.1.7. Searching for Projects/Tasks: `find`
 
-Done by Balasubramaniam Praveen
+(Balasubramaniam Praveen)
 
 Momentum allows you to make detailed searches for items based on a combination of their name, description, tags and completion status. This is done using the find command.
 
@@ -910,7 +910,7 @@ The possibilities of using match type to enhance your searches are limitless. He
 
 #### 5.1.8. Viewing All Projects/Tasks: `list`
 
-Done by Farrell Nah Jun Hao
+(Farrell Nah Jun Hao)
 
 When you are viewing projects, this command shows you a list of all projects in Momentum.
 
@@ -945,7 +945,7 @@ Suppose you had previously executed a [find command](#517-searching-for-projects
 
 ### 5.2. Time Tracking
 
-Done by Farrell Nah Jun Hao
+(Farrell Nah Jun Hao)
 
 You can track the time you spend working on a project or task by starting a timer when you start working, and then stopping the timer once you finish.
 
@@ -1042,7 +1042,7 @@ You can perform time tracking with the following steps:
 
 ### 5.3. Reminders
 
-Done by Cheong Ying Yi Clara
+(Cheong Ying Yi Clara)
 
 * A reminder will be shown in the reminder panel of the sidebar at the date and time you specified.
 
@@ -1054,7 +1054,7 @@ Done by Cheong Ying Yi Clara
 
 #### 5.3.1. Dismissing a Reminder : `dismiss`
 
-Done by Cheong Ying Yi Clara
+(Cheong Ying Yi Clara)
 
 You can dismiss a reminder using this command.
 
@@ -1086,7 +1086,7 @@ This walkthrough is a follow-up of the walkthrough in [Creating a Project/Task](
 
 ### 5.4. Showing and Hiding Tags : `show`
 
-Done by Cheong Ying Yi Clara
+(Cheong Ying Yi Clara)
 
 You can hide or show the tags panel of the sidebar.
 
@@ -1116,7 +1116,7 @@ The following walkthrough shows how you can hide the tags panel.
 
 ### 5.5. Undoing/Redoing
 
-Done By Kang Su Min
+(Kang Su Min)
 
 Momentum allows you to easily reverse any mistakes that you make with the `undo` and `redo` commands.
 
@@ -1198,7 +1198,7 @@ The following walkthrough uses a change in [sort type](#516-sorting-projectstask
 
 ### 5.6. Statistics
 
-Done by Farrell Nah Jun Hao
+(Farrell Nah Jun Hao)
 
 Momentum uses the data collected from your [timers](#52-time-tracking) to calculate statistics. These statistics are automatically generated and updated whenever you make any changes to your items, such as when you start or stop a new timer. They can be seen in a panel on the left side of the window, as shown here:
 
@@ -1241,7 +1241,7 @@ The statistics are displayed in 2 different formats:
 
 ### 5.7. Settings
 
-Done by Khoo De Hui
+(Khoo De Hui)
 
 Momentum allows you to change various settings so that you can make the application more suited to your preferences. Currently, the settings which you can adjust are:
 * The application [theme](#42-user-interface-theme).
