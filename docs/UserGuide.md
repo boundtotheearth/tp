@@ -68,8 +68,8 @@ Throughout this document, you will come across these notations:
 
 You will be presented with multiple commands throughout this document. You may find the description of the command format below.
 
-* Words in `UPPER_CASE` are the parameters to be supplied by the user.
-  e.g. in `add n/NAME`, `NAME` is a parameter which can be used as `add n/Blog Design`.
+* Words in `UPPER_CASE` are the parameters to be supplied by the user. Parameters are preceded by prefixes. The prefixes represent what the parameters will be used for in the command.
+  e.g. in `add n/NAME`, `NAME` is a parameter which can be used as `add n/Blog Design`, whereas the `n/` signifies that the parameter is being used in the name.
 
 * Items in square brackets are optional.
   e.g `n/NAME [t/TAG]` can be used as `n/Blog Design t/friend` or as `n/Blog Design`.
@@ -652,7 +652,7 @@ Momentum allows you to make detailed searches for items based on a combination o
 
 Format: `find [match/FILTER_TYPE] [n/NAME [MORE_NAMES]...] [d/DESCRIPTION [MORE_DESCRIPTIONS]...] [t/TAG [MORE_TAGS]...] [c/COMPLETION_STATUS]`
 
-Here are some ways you can make simple searches using the find command. Advanced searches that utilize the match parameter will be [discussed later](#searching-by-multiple-keywords). 
+Here are some ways you can make simple searches using the find command. Advanced searches will be [discussed later](#searching-by-multiple-parameters). 
 
 <div markdown="block" class="alert alert-info">
 
@@ -668,127 +668,159 @@ Here are some ways you can make simple searches using the find command. Advanced
 
 ##### Searching by Name
 
-* The `n/` command checks whether a project has a certain name. There can be multiple names added to this command. For example, `n/car window` will check for the projects that contain `car` or `window` in their names.
+* The `n/` prefix checks whether a project has a certain name.
 
 * Searching by name only requires a partial match. This means that a project with the name `carpet` and `car` can potentially be the result of searching for the term `car`.
 
-The following walkthrough shows how you can use the find command to search for projects with `ad` in their names.
+The following walkthrough shows how you can use the find command to search for projects with `ad` in their name.
 
-1. Key in the command `find n/ad` in the command window.
-![Find by Name Step 1](images/FindByName1.png)
-2. The result box will display a message to indicate that the command has been executed successfully:
-![Find by Name Step 2](images/FindByName2.png)
+1. Key in the command `find n/ad` in the command window and press <kbd>Enter</kbd>.
+
+  ![Find by Name Step 1](images/FindByName1.png)
+
+2. The result box will display a message to indicate that the command has been executed successfully.
+
+  ![Find by Name Step 2](images/FindByName2.png)
+
 3. All projects that contain `ad` in their name will be shown.
-![Find by Name Step 3](images/FindByName3.png)
+
+  ![Find by Name Step 3](images/FindByName3.png)
 
 ##### Searching by Description
 
-* The `d/` command checks whether a project has a certain description. There can be multiple descriptions added to this command. For example, `d/sunday october` will check for the projects that contain `sunday` or `october` in their description.
+* The `d/` prefix checks whether an item has a certain description.
+
 * Searching by description only requires a partial match, similar to searching by name.
 
-The following walkthrough shows how you can use the find command to search for projects with `discussion` in their description.
+The following walkthrough shows how you can use the find command to search for items with `discussion` in their description.
 
-1. Key in the command `find d/discussion` in the command window.
-![Find by Description Step 1](images/FindByDesc1.png)
-2. The result box will display a message to indicate that the command has been executed successfully:
-![Find by Description Step 2](images/FindByDesc2.png)
+1. Key in the command `find d/discussion` in the command window and press <kbd>Enter</kbd>.
+
+  ![Find by Description Step 1](images/FindByDesc1.png)
+
+2. The result box will display a message to indicate that the command has been executed successfully.
+
+  ![Find by Description Step 2](images/FindByDesc2.png)
+
 3. All projects that contain `discussion` in their description will be shown.
-![Find by Description Step 3](images/FindByDesc3.png)
+
+  ![Find by Description Step 3](images/FindByDesc3.png)
 
 ##### Searching by Tag
 
-* The `t/` command checks whether a project has a certain tag. There can be multiple tags added to this command. For example, `t/freelance errands` will check for the projects that contain the tags `freelance` or `errands`.
-* Searching by tags will require a full word match unlike searching by name or description. This means that searching for the tag `free` will not find a project with the tag `freelance`.
+* The `t/` prefix checks whether an item has a certain tag.
+
+* Searching by tags will require a full word match unlike searching by name or description. This means that searching for the tag `free` will not find an item with the tag `freelance`.
 
 <div markdown="block" class="alert alert-info">
 
-:bulb: **Tip:**
-Searches for tags require a full match whilst partial matches are sufficient for searches by name and description.
+:bulb: Searches for tags require a full match whilst partial matches are sufficient for searches by name and description.
 
 </div>
 
 The following walkthrough shows how you can use the find command to search for projects with the tag `webdesign`.
 
-1. Key in the command `find t/webdesign` in the command window.
-![Find by Tag Step 1](images/FindByTag1.png)
-2. The result box will display a message to indicate that the command has been executed successfully:
-![Find by Tag Step 2](images/FindByTag2.png)
+1. Key in the command `find t/webdesign` in the command window and press <kbd>Enter</kbd>.
+
+  ![Find by Tag Step 1](images/FindByTag1.png)
+
+2. The result box will display a message to indicate that the command has been executed successfully.
+
+  ![Find by Tag Step 2](images/FindByTag2.png)
+
 3. All projects that contain the tag `webdesign` will be shown.
-![Find by Tag Step 3](images/FindByTag3.png)
+
+  ![Find by Tag Step 3](images/FindByTag3.png)
 
 ##### Searching by Completion Status
 
-* There are keywords, completed and incomplete for`c/KEYWORD`. Other keywords are not accepted.
-* The `c/` command checks whether a project is completed. For example, `c/completed` will check for the projects that are completed.
-* When `c/` is not specified, both complete and incomplete projects will be shown.
+* Only the parameters `completed` and `incomplete` are accepted for `c/KEYWORD`.
+
+* The `c/` prefix checks whether an item is completed. For example, `c/completed` will check for the items that are completed.
+
+* When `c/` is not specified, both complete and incomplete items will be shown.
 
 The following walkthrough shows how you can use the find command to search for projects that have been completed.
 
-1. Key in the command `find c/completed` in the command window.
-![Find by Completion Step 1](images/FindByCompletion1.png)
-2. The result box will display a message to indicate that the command has been executed successfully:
-![Find by Completion Step 2](images/FindByCompletion2.png)
+1. Key in the command `find c/completed` in the command window and press <kbd>Enter</kbd>.
+
+  ![Find by Completion Step 1](images/FindByCompletion1.png)
+
+2. The result box will display a message to indicate that the command has been executed successfully.
+
+  ![Find by Completion Step 2](images/FindByCompletion2.png)
+
 3. All projects that are completed will be shown.
-![Find by Completion Step 3](images/FindByCompletion3.png)
 
-##### Searching by Multiple Keywords
-
-You can search for projects or tasks with multiple keywords for names, descriptions and tags in a single search.
-
-To do this, you can add all the keywords that you would like to search for in the command. For example, if you would like to
-search for projects or tasks that contain either `discussion` or `drawing` in their descriptions, you can do so by searching using
-the command `find d/discussion drawing`.
-
-In this command, each keyword to search for is separated by a whitespace.
-
-The following walkthrough shows you can use the find command to search for projects with `discussion` or `drawing` in their description.
-
-1. Key in the command `find d/discussion drawing` in the command window.
-![Find by Multiple Keywords Step 1](images/FindByMultipleKeywords1.png)
-2. The result box will display a message to indicate that the command has been executed successfully:
-![Find by Multiple Keywords Step 2](images/FindByMultipleKeywords2.png)
-3. All projects that contain `discussion` or `drawing` in their description will be shown.
-![Find by Multiple Keywords Step 3](images/FindByMultipleKeywords3.png)
-
-You can use the same method to search for projects using multiple keywords for name or tags. However, this will not work with completion status. You can only search by one completion status. 
+  ![Find by Completion Step 3](images/FindByCompletion3.png)
 
 ##### Searching by Multiple Parameters
 
-So far, you have learnt how to search for projects that contain multiple keywords for a single parameter. But what if you want to search for projects by multiple parameters instead? 
+You can search for items with multiple parameters for names, descriptions and tags in a single search.
+
+To do this, you can add all the parameters that you would like to search for in the command. For example, if you would like to search for items that contain either `discussion` or `drawing` in their description, you can do so by searching using the command `find d/discussion drawing`.
+
+In this command, each parameter to search for is separated by a whitespace.
+
+The following walkthrough shows you can use the find command to search for projects with `discussion` or `drawing` in their description.
+
+1. Key in the command `find d/discussion drawing` in the command window and press <kbd>Enter</kbd>.
+
+  ![Find by Multiple Parameters Step 1](images/FindByMultipleKeywords1.png)
+
+2. The result box will display a message to indicate that the command has been executed successfully.
+
+  ![Find by Multiple Parameters Step 2](images/FindByMultipleKeywords2.png)
+
+3. All projects that contain `discussion` or `drawing` in their description will be shown.
+
+  ![Find by Multiple Parameters Step 3](images/FindByMultipleKeywords3.png)
+
+You can use the same method to search for projects using multiple parameters for name or tags. However, this will not work with completion status. You can only search by one completion status. 
+
+##### Searching by Multiple Prefixes
+
+So far, you have learnt how to search for items that contain multiple parameters for a single prefix. But what if you want to search for items by multiple prefixes instead? 
 
 Momentum makes it extremely easy for you to do that. 
 
-To make such a search, all you need to do is add all the parameters you would like to search for in a single find command. You can think of this as combining mulitple find commands together. For example, if you would like to search for projects or tasks that contain either `certification` in their name or `discussion` in their description, you can do so by searching using the command `find n/certification d/discussion`.
+To make such a search, all you need to do is add all the prefixes you would like to search for in a single find command. You can think of this as combining mulitple find commands together. For example, if you would like to search for items that contain either `certification` in their name or `discussion` in their description, you can do so by searching using the command `find n/certification d/discussion`.
 
-The following walkthrough shows you can use the find command to search for projects that contain either `certification` in their names or `discussion` in their description.
+The following walkthrough shows you can use the find command to search for projects that contain either `certification` in their name or `discussion` in their description.
 
-1. Key in the command `find n/certification d/discussion` in the command window.
-![Find by Multiple Parameters Step 1](images/FindByMultipleParameters1.png)
-2. The result box will display a message to indicate that the command has been executed successfully:
-![Find by Multiple Parameters Step 2](images/FindByMultipleParameters2.png)
+1. Key in the command `find n/certification d/discussion` in the command window and press <kbd>Enter</kbd>.
+
+  ![Find by Multiple Prefixes Step 1](images/FindByMultipleParameters1.png)
+
+2. The result box will display a message to indicate that the command has been executed successfully.
+
+  ![Find by Multiple Prefixes Step 2](images/FindByMultipleParameters2.png)
+
 3. All projects that contain `certification` in their name or `discussion` in their description will be shown.
-![Find by Multiple Parameters Step 3](images/FindByMultipleParameters3.png)
 
-You can use the same method to search for projects by a combination of other parameters as well. You can also use multiple keywords for each parameter that allows for it as mentioned in the previous section. 
+  ![Find by Multiple Prefixes Step 3](images/FindByMultipleParameters3.png)
+
+You can also use multiple parameters for each prefix that allows for it as mentioned in the previous section. 
 
 <div markdown="block" class="alert alert-info">
 
-:bulb: **Tip:**
-If a certain search type is used more than once, the latest entry will be used.
+:bulb: If a certain search prefix is used more than once, the last entry will be used.
 `find n/a n/b n/c` will only search for items that contain`c` in their name.
 
 </div>
 
 ##### Adding Match Type to Searches
 
-So far, you have learnt how to make searches by multiple keywords and parameters. However, the searches shown so far show a project as long as there is any one keyword that matches it. But this might not be useful in some cases. What if you need to search for a project that matches all keywords, or does not match any of the keywords entered.
+So far, you have learnt how to make searches by multiple parameters and prefixes. However, the searches shown so far show an item as long as there is any one parameter that matches it. But this might not be useful in some cases. What if you need to search for an item that matches all parameters, or does not match any of the parameters entered.
 
-This is where match type comes in. Match type can be added to your find command in addition to the parameters you are searching by. 
+This is where match type comes in. Match type can be added to your find command in addition to the prefixes and parameters you are searching by. 
 
-There are three values for the `match` parameter.
-  * `match/all` shows an entry only if **all** of the keywords and parameters provided in the user's input matches the entry.
-  * `match/any` shows an entry as long as **any** of the keywords and parameters provided in the user's input matches the entry.
-  * `match/none` shows an entry only if **none** of the keywords and parameters provided in the user's input matches the entry.
+There are three values for the `match/` prefix.
+  * `match/all` shows an item only if **all** of the parameters and prefixes provided in your input matches the item.
+
+  * `match/any` shows an item as long as **any** of the parameters and prefixes provided in your input matches the item.
+
+  * `match/none` shows an item only if **none** of the parameters and prefixes provided in your input matches the item.
 
 <div markdown="block" class="alert alert-info">
 
@@ -797,45 +829,61 @@ There are three values for the `match` parameter.
 
 </div>
 
-This might be a little confusing, so let's dive right into an example. We'll look at the example `find n/ad d/discussion t/artcomm` and compare how match type affects the results displayed.
+Here is an example to illustrate this concept more clearly. Consider the following command `find n/ad d/discussion t/artcomm`. We will compare how different match types affect the results displayed for the same command.
 
-Let's first look at `match/any`. This match type shows an entry as long as any keyword matches the user's input. It is also the default behaviour of the find command. The following walkthrough shows how to use `match/any`. 
+Let's first look at `match/any`. This match type shows an item as long as any parameter matches your input. It is also the default behaviour of the find command. The following walkthrough shows how to use `match/any`. 
 
-1. Key in the command `find n/ad d/discussion t/artcomm match/any` in the command window.
-![Match Any Step 1](images/MatchAny1.png)
-2. The result box will display a message to indicate that the command has been executed successfully:
-![Match Any Step 2](images/MatchAny2.png)
+1. Key in the command `find n/ad d/discussion t/artcomm match/any` in the command window and press <kbd>Enter</kbd>.
+
+  ![Match Any Step 1](images/MatchAny1.png)
+
+2. The result box will display a message to indicate that the command has been executed successfully.
+
+  ![Match Any Step 2](images/MatchAny2.png)
+
 3. All projects that contain `ad` in their name or `discussion` in their description or the tag `artcomm` will be shown.
-![Match Any Step 3](images/MatchAny3.png)
 
-As seen in the example above, an entry is shown as long as any one of the keywords matches the project. 
+  ![Match Any Step 3](images/MatchAny3.png)
 
-Let's now look at `match/all`. This match type shows an entry only if all keywords matches the user's input. The following walkthrough shows how to use `match/all`. 
+As seen in the example above, an item is shown as long as any one of the parameters matches it. 
 
-1. Key in the command `find n/ad d/discussion t/artcomm match/all` in the command window.
-![Match All Step 1](images/MatchAll1.png)
-2. The result box will display a message to indicate that the command has been executed successfully:
-![Match All Step 2](images/MatchAll2.png)
+Let's now look at `match/all`. This match type shows an entry only if all parameters matches your input. The following walkthrough shows how to use `match/all`. 
+
+1. Key in the command `find n/ad d/discussion t/artcomm match/all` in the command window and press <kbd>Enter</kbd>.
+
+  ![Match All Step 1](images/MatchAll1.png)
+
+2. The result box will display a message to indicate that the command has been executed successfully.
+
+  ![Match All Step 2](images/MatchAll2.png)
+
 3. All projects that contain `ad` in their name and `discussion` in their description and the tag `artcomm` will be shown.
-![Match All Step 3](images/MatchAll3.png)
 
-As seen in the example above, an entry is only shown if all keywords matches the project. 
+  ![Match All Step 3](images/MatchAll3.png)
 
-Finally, let's look at `match/none`. This match type shows an entry only if none of the keywords matches the user's input. The following walkthrough shows how to use `match/none`. 
+As seen in the example above, an item is only shown if all parameters matches it. 
 
-1. Key in the command `find n/ad d/discussion t/artcomm match/none` in the command window.
-![Match None Step 1](images/MatchAll1.png)
-2. The result box will display a message to indicate that the command has been executed successfully:
-![Match None Step 2](images/MatchAll2.png)
+Finally, let's look at `match/none`. This match type shows an item only if none of the parameters matches your input. The following walkthrough shows how to use `match/none`. 
+
+1. Key in the command `find n/ad d/discussion t/artcomm match/none` in the command window and press <kbd>Enter</kbd>.
+
+  ![Match None Step 1](images/MatchNone1.png)
+
+2. The result box will display a message to indicate that the command has been executed successfully.
+
+  ![Match None Step 2](images/MatchNone2.png)
+
 3. All projects that do not contain `ad` in their name, `discussion` in their description and the tag `artcomm` will be shown.
-![Match None Step 3](images/MatchAll3.png)
 
-As seen in the example above, an entry is only shown if none of the keywords matches the project. 
+  ![Match None Step 3](images/MatchNone3.png)
 
-The posibilities of using match type to enhance your searches is limitless. Here are some examples where `match/all` and `match/none` may come in handy.
+As seen in the example above, an item is only shown if none of the parameters matches it.
 
-1. If you have many projects and want to find a specific project, you can use `match/all` to narrow down your search results.
-2. If you have many projects and want to find projects that are not part of a certain category, you can use `match/none` to narrrow down your search results.
+The posibilities of using match type to enhance your searches are limitless. Here are some examples where `match/all` and `match/none` may come in handy.
+
+1. If you have many items and want to find a specific one, you can use `match/all` to narrow down your search results.
+
+2. If you have many items and want to find those that are not part of a certain category, you can use `match/none` to narrrow down your search results.
 
 #### View All : `list`
 
