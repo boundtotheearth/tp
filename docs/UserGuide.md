@@ -190,7 +190,7 @@ Refer to the [Features](#5-features) below for a more comprehensive set of featu
 
 ## 4. User Interface Overview
 
-Done by: Khoo De Hui
+(Khoo De Hui)
 
 Momentum uses a graphical user interface (GUI) to interact with you. This is where you will give your input, and where Momentum will display information to you. This section will give you a walkthrough on the GUI of Momentum.
 
@@ -240,7 +240,7 @@ By default, the theme of Momentum is set to Dark. If you want to adjust the them
 ## 5. Features
 ### 5.1. Projects and Tasks
 
-Done by: Farrell Nah Jun Hao
+(Farrell Nah Jun Hao)
 
 You can add projects into Momentum to be tracked. Each project can have the following information:
 
@@ -268,7 +268,7 @@ Please refer to each command for these differences.
 
 #### 5.1.1. Viewing a Project's Tasks: `view`
 
-Done by: Farrell Nah Jun Hao
+(Farrell Nah Jun Hao)
 
 View the tasks for a project.
 
@@ -299,7 +299,7 @@ Suppose you would like to view the tasks belonging to the 2nd project in the lis
 
 #### 5.1.2. Viewing Projects: `home`
 
-Done by: Farrell Nah Jun Hao
+(Farrell Nah Jun Hao)
 
 View all the projects being tracked by Momentum.
 This is the default view you will see when Momentum is first opened.
@@ -324,7 +324,7 @@ The following walkthrough shows how you can use the home command to go from task
 
 #### 5.1.3. Creating a Project/Task: `add`
 
-Done by: Cheong Ying Yi Clara
+(Cheong Ying Yi Clara)
 
 When Momentum is in [project view](#7-glossary), you can use the add command to create a new project. When Momentum is in [task view](#7-glossary), you can use the add command to create a new task for the project that you are viewing.
 
@@ -1278,7 +1278,7 @@ The following walkthrough shows how you can change the theme and settings timefr
 
 ### 5.8. Clearing All Projects/Tasks : `clear`
 
-Done by Farrell Nah Jun Hao
+(Farrell Nah Jun Hao)
 
 When you are viewing all projects, this command deletes all the projects in Momentum, including their tasks.
 
