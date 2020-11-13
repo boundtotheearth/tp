@@ -515,9 +515,10 @@ In addition to the above sort types and orders, the list can be sorted by comple
 
     * Once the completion status sort is off, the items will be sorted in the specified sort type and order without regard for their completion status.
 
-<div markdown="block" class="alert alert-primary">
+<div markdown="block" class="alert alert-info">
 
-:bulb: Here are some things you should take note of
+:bulb: Here are some things you should take note of.
+
 * When the application first starts, the completion status order is turned on. This completion status sort status (on/off) is maintained until it is toggled.
 
 * `type/alpha` and `order/asc` will be used as default if both sort type and order are not specified. For example, when the command is `sort`.
@@ -536,7 +537,7 @@ This sorts items in default ascending alphabetical order.
 
 The following walkthrough shows how you can sort projects in Momentum by the default order.
 
-1. Key in command `sort` in the command window and press <kbd>Enter</kbd>.
+1. Key in command `sort` in the command box and press <kbd>Enter</kbd>.
 
   ![Default Sort Step 1](images/DefaultSort1.png)
 
@@ -556,7 +557,7 @@ This toggles the completion status order. For example, if the completion status 
 
 The following walkthrough shows how you can toggle the completion status order in Momentum.
 
-1. Key in command `sort c/` in the command window and press <kbd>Enter</kbd>.
+1. Key in command `sort c/` in the command box and press <kbd>Enter</kbd>.
 
   ![Toggle Completion Status Step 1](images/ToggleCompletionStatus1.png)
 
@@ -580,7 +581,7 @@ Example: `sort type/deadline`
 
 The following walkthrough shows how you can sort projects in Momentum by specifying only the sort type.
 
-1. Key in command `sort type/deadline` in the command window and press <kbd>Enter</kbd>.
+1. Key in command `sort type/deadline` in the command box and press <kbd>Enter</kbd>.
 
   ![Deadline Sort 1](images/DeadlineSort1.png)
 
@@ -606,7 +607,7 @@ Example: `sort order/dsc`
 
 The following walkthrough shows how you can sort projects in Momentum by specifying only the sort order.
 
-1. Key in command `sort order/dsc` in the command window and press <kbd>Enter</kbd>.
+1. Key in command `sort order/dsc` in the command box and press <kbd>Enter</kbd>.
 
   ![Deadline Sort Descending 1](images/DeadlineDescending1.png)
 
@@ -628,7 +629,7 @@ Example: `sort type/created order/dsc`
 
 The following walkthrough shows how you can sort projects in Momentum by specifying both sort type and order.
 
-1. Key in command `sort type/created order/dsc` in the command window and press <kbd>Enter</kbd>.
+1. Key in command `sort type/created order/dsc` in the command box and press <kbd>Enter</kbd>.
 
   ![Created Descending 1](images/CreatedDescending1.png)
 
@@ -674,7 +675,7 @@ Here are some ways you can make simple searches using the find command. Advanced
 
 The following walkthrough shows how you can use the find command to search for projects with `ad` in their name.
 
-1. Key in the command `find n/ad` in the command window and press <kbd>Enter</kbd>.
+1. Key in the command `find n/ad` in the command box and press <kbd>Enter</kbd>.
 
   ![Find by Name Step 1](images/FindByName1.png)
 
@@ -694,7 +695,7 @@ The following walkthrough shows how you can use the find command to search for p
 
 The following walkthrough shows how you can use the find command to search for items with `discussion` in their description.
 
-1. Key in the command `find d/discussion` in the command window and press <kbd>Enter</kbd>.
+1. Key in the command `find d/discussion` in the command box and press <kbd>Enter</kbd>.
 
   ![Find by Description Step 1](images/FindByDesc1.png)
 
@@ -720,7 +721,7 @@ The following walkthrough shows how you can use the find command to search for i
 
 The following walkthrough shows how you can use the find command to search for projects with the tag `webdesign`.
 
-1. Key in the command `find t/webdesign` in the command window and press <kbd>Enter</kbd>.
+1. Key in the command `find t/webdesign` in the command box and press <kbd>Enter</kbd>.
 
   ![Find by Tag Step 1](images/FindByTag1.png)
 
@@ -742,7 +743,7 @@ The following walkthrough shows how you can use the find command to search for p
 
 The following walkthrough shows how you can use the find command to search for projects that have been completed.
 
-1. Key in the command `find c/completed` in the command window and press <kbd>Enter</kbd>.
+1. Key in the command `find c/completed` in the command box and press <kbd>Enter</kbd>.
 
   ![Find by Completion Step 1](images/FindByCompletion1.png)
 
@@ -764,7 +765,7 @@ In this command, each parameter to search for is separated by a whitespace.
 
 The following walkthrough shows you can use the find command to search for projects with `discussion` or `drawing` in their description.
 
-1. Key in the command `find d/discussion drawing` in the command window and press <kbd>Enter</kbd>.
+1. Key in the command `find d/discussion drawing` in the command box and press <kbd>Enter</kbd>.
 
   ![Find by Multiple Parameters Step 1](images/FindByMultipleKeywords1.png)
 
@@ -788,7 +789,7 @@ To make such a search, all you need to do is add all the prefixes you would like
 
 The following walkthrough shows you can use the find command to search for projects that contain either `certification` in their name or `discussion` in their description.
 
-1. Key in the command `find n/certification d/discussion` in the command window and press <kbd>Enter</kbd>.
+1. Key in the command `find n/certification d/discussion` in the command box and press <kbd>Enter</kbd>.
 
   ![Find by Multiple Prefixes Step 1](images/FindByMultipleParameters1.png)
 
@@ -833,7 +834,7 @@ Here is an example to illustrate this concept more clearly. Consider the followi
 
 Let's first look at `match/any`. This match type shows an item as long as any parameter matches your input. It is also the default behaviour of the find command. The following walkthrough shows how to use `match/any`. 
 
-1. Key in the command `find n/ad d/discussion t/artcomm match/any` in the command window and press <kbd>Enter</kbd>.
+1. Key in the command `find n/ad d/discussion t/artcomm match/any` in the command box and press <kbd>Enter</kbd>.
 
   ![Match Any Step 1](images/MatchAny1.png)
 
@@ -849,7 +850,7 @@ As seen in the example above, an item is shown as long as any one of the paramet
 
 Let's now look at `match/all`. This match type shows an entry only if all parameters matches your input. The following walkthrough shows how to use `match/all`. 
 
-1. Key in the command `find n/ad d/discussion t/artcomm match/all` in the command window and press <kbd>Enter</kbd>.
+1. Key in the command `find n/ad d/discussion t/artcomm match/all` in the command box and press <kbd>Enter</kbd>.
 
   ![Match All Step 1](images/MatchAll1.png)
 
@@ -865,7 +866,7 @@ As seen in the example above, an item is only shown if all parameters matches it
 
 Finally, let's look at `match/none`. This match type shows an item only if none of the parameters matches your input. The following walkthrough shows how to use `match/none`. 
 
-1. Key in the command `find n/ad d/discussion t/artcomm match/none` in the command window and press <kbd>Enter</kbd>.
+1. Key in the command `find n/ad d/discussion t/artcomm match/none` in the command box and press <kbd>Enter</kbd>.
 
    ![Match None Step 1](images/MatchNone1.png)
 
@@ -1108,7 +1109,7 @@ Format: `undo`
 
 The following walkthrough shows how you can start a timer for a project, then undo the command.
 
-1. Key in command `start 1` in the command window then press <kbd>Enter</kbd>.
+1. Key in command `start 1` in the command box then press <kbd>Enter</kbd>.
 
    ![Undo 1](images/Undo1.png)
 
@@ -1116,7 +1117,7 @@ The following walkthrough shows how you can start a timer for a project, then un
 
    ![Undo 2](images/Undo2.png)
 
-3. Key in command `undo` in the command window then press <kbd>Enter</kbd>.
+3. Key in command `undo` in the command box then press <kbd>Enter</kbd>.
 
    ![Undo 3](images/Undo3.png)
 
@@ -1130,36 +1131,48 @@ The following walkthrough shows how you can start a timer for a project, then un
 
 #### Redoing the Previous Command: `redo`
 
-The redo command redoes the last command that was previously undone. You can recover all data before the last `undo` command was executed.
+The redo command reverses the previous undo command that you executed. This allows you to revert the changes made by an undo command.
 
 Format: `redo`
 
-Example: `sort type/deadline`, `undo`, `redo`
+The following walkthough uses a change in [sort type](#sort-projects-sort) to show how you can redo the changes made by an undo command.
 
-Result: Projects are first sorted by deadline, then the application is reset to the sorting order before sort command was executed when `undo` command is executed, then reset back to sort by deadline after `redo` command.
+1. Key in command `sort type/deadline` in the command box then press <kbd>Enter</kbd>.
 
-The following walkthrough shows how a user can start a timer for a project, then undo the command.
+   ![Redo 1](images/Redo1.png)
 
-1. Key in command `sort type/deadline` in the command window then press <kbd>Enter</kbd>.
-![Redo 1](images/Redo1.png)
-Note: The projects are currently sorted in alphabetical, ascending order (default order).
+   Note: The projects are currently sorted in alphabetical, ascending order (default order).
+
 2. The result box will display a message to indicate that the command has been executed successfully. Projects are now sorted in ascending deadline order.
-![Redo 2](images/Redo2.png)
-3. Key in command `undo` in the command window then press <kbd>Enter</kbd>.
-![Redo 3](images/Redo3.png)
+
+   ![Redo 2](images/Redo2.png)
+
+3. Key in command `undo` in the command box then press <kbd>Enter</kbd>.
+
+  ![Redo 3](images/Redo3.png)
+
 4. The result box will display a message to indicate that the command has been undone successfully. Projects are now sorted in their original order (alphabetical, ascending).
-![Redo 4](images/Redo4.png)
-5. Key in command `redo` in the command window then press <kbd>Enter</kbd>.
-![Redo 5](images/Redo5.png)
+
+   ![Redo 4](images/Redo4.png)
+
+5. Key in command `redo` in the command box then press <kbd>Enter</kbd>.
+
+   ![Redo 5](images/Redo5.png)
+
 6. The result box will display a message to indicate that the command has been redone successfully.
-![Redo 6](images/Redo6.png)
+
+   ![Redo 6](images/Redo6.png)
+
 7. Projects are again sorted in ascending deadline order.
-![Redo 7](images/Redo7.png)
 
-<div markdown="block" class="alert alert-primary">
+   ![Redo 7](images/Redo7.png)
 
-:bulb:
-* Undo/redo feature keeps track of changes in data, and hence will not work on `help` or `exit` command which do not change the data in the application.
+<div markdown="block" class="alert alert-info">
+
+:bulb: Here are some things to take note of:
+
+* Undo/redo will not work on the `help` or `exit` command.
+
 * Redo command only works if the previous command is `undo`.
 
 </div>
@@ -1168,10 +1181,7 @@ Note: The projects are currently sorted in alphabetical, ascending order (defaul
 
 Done by Farrell Nah Jun Hao
 
-Momentum uses the data collected from your timers (see [time tracking](#time-tracking)) to calculate statistics. These
- statistics are automatically generated and updated whenever you make any changes to your items, such as
-  when you start or stop a new timer.
- These statistics can be seen in a panel on the left side of the window, as shown here:
+Momentum uses the data collected from your [timers](#time-tracking) to calculate statistics. These statistics are automatically generated and updated whenever you make any changes to your items, such as when you start or stop a new timer. These statistics can be seen in a panel on the left side of the window, as shown here:
 
 ![StatisticsUI1](images/StatsUI1.png)
 Figure X: Location of the statistics panel
