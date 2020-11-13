@@ -46,7 +46,6 @@ We present you Momentum, the application that will make sure you never lose your
 Momentum is a Command Line Interface (CLI) application equipped with Graphical User Interface (GUI) that is interactive, visually appealing, and easy to use. This means everything within our application can be done with just your keyboard, which provides a user-friendly experience for you. 
 
 <div style="page-break-after: always;"></div>
-
 ## 2. About this Document
 This user guide provides detailed explanations and walkthroughs on the features available in Momentum. If you wish to learn how to use Momentum, this guide is for you. While reading this document, here are a few things you should take note of.
 
