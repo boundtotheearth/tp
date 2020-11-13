@@ -1310,7 +1310,7 @@ The following walkthrough shows how you can clear all projects in Momentum
 Shows a message explaining how to access the help page.
 
 ![help message](images/helpMessage.png)
-Figure 5.9A: The help window
+Figure 5.9A: The help window.
 
 Format: `help`
 
