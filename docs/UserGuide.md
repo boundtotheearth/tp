@@ -61,6 +61,8 @@ Throughout this document, you will come across these notations:
 
 * **Keyboard Keys**: Words that are wrapped in a box like <kbd>this</kbd> points to a corresponding key on your keyboard.
 
+* **Terminology**: Momentum tracks both projects and tasks. In this document, we will refer to both projects and tasks as items. 
+
 
 ### Command Format
 
@@ -165,7 +167,7 @@ You may also have to enter both dates and times together. When entered together,
 
    * `list` : List all projects or tasks based on the current view mode.
 
-   * `sort type/deadline order/asc` : Sort the list of projects/tasks by deadline in ascending order.
+   * `sort type/deadline order/asc` : Sort the list of items by deadline in ascending order.
 
    * `start 1` : Start the timer of project/task at index 1.
 
@@ -484,45 +486,45 @@ Suppose you would like to delete the first project in the list
 
 Done by Kang Su Min
 
-This command allows you to sort the list of displayed projects or tasks in a particular sort type and order.
+This command allows you to sort the list of displayed items in a particular sort type and order.
 
 Format: `sort [type/SORT_TYPE] [order/SORT_ORDER] [c/]`
 
 * There are 3 sort types.
 
-  * `type/alpha` will sort the list of projects in alphabetical order.
+  * `type/alpha` will sort the list of items in alphabetical order.
   
-  * `type/deadline` will sort the list of projects according to their deadlines.
+  * `type/deadline` will sort the list of items according to their deadlines.
 
-  * `type/created` will sort the list of projects according to their date of creation.
+  * `type/created` will sort the list of items according to their date of creation.
 
 
 * There are 2 sort orders.
 
-  * `order/asc` will sort the list of projects in ascending order.
+  * `order/asc` will sort the list of items in ascending order.
 
-  * `order/dsc` will sort the list of projects in descending order.
+  * `order/dsc` will sort the list of items in descending order.
 
 In addition to the above sort types and orders, the list can be sorted by completion status.
 
-* This is the "dominant sort" that will ensure that all incomplete projects/tasks are above complete projects/tasks, before sorting the projects/tasks in the specified sort type and order above.
+* This is the "dominant sort" that will ensure that all incomplete projects/tasks are above complete items, before sorting the items in the specified sort type and order above.
 
-* The default sort order will sort the projects/tasks by completion status.
+* The default sort order will sort the items by completion status.
 
 * `sort c/` will toggle the default completion status sort.
 
-    * Once the completion status sort is off, the projects/tasks will be sorted in the specified sort type and order without regard for their completion status.
+    * Once the completion status sort is off, the items will be sorted in the specified sort type and order without regard for their completion status.
 
 <div markdown="block" class="alert alert-primary">
 
 :bulb: Here are some things you should take note of
 * When the application first starts, the completion status order is turned on. This completion status sort status (on/off) is maintained until it is toggled.
 
-* `type/alpha` and `order/asc` will be used as default if both sort type and order are not specified (i.e. command is `sort`)
+* `type/alpha` and `order/asc` will be used as default if both sort type and order are not specified. For example, when the command is `sort`.
 
 * For both `sort type/deadline` and `sort type/created`, projects with the same deadline or same created date will be sorted in alphabetical order.
 
-* For `sort type/deadline`, projects/tasks with deadlines will appear at the top of the list sorted in deadline order, while those without deadlines will be pushed to the end of the list sorted in alphabetical order
+* For `sort type/deadline`, items with deadlines will appear at the top of the list sorted in deadline order, while those without deadlines will be pushed to the end of the list sorted in alphabetical order.
 
 </div>
 
@@ -530,37 +532,47 @@ In addition to the above sort types and orders, the list can be sorted by comple
 
 Format: `sort`
 
-This sorts projects in default ascending alphabetical order.
+This sorts items in default ascending alphabetical order.
 
 The following walkthrough shows how you can sort projects in Momentum by the default order.
 
-1. Key in command `sort` in the command window then press <kbd>Enter</kbd>.
-![Default Sort Step 1](images/DefaultSort1.png)
-2. The result box will display a message to indicate that the command has been executed successfully:
-![Default Sort Step 2](images/DefaultSort2.png)
+1. Key in command `sort` in the command window and press <kbd>Enter</kbd>.
+
+  ![Default Sort Step 1](images/DefaultSort1.png)
+
+2. The result box will display a message to indicate that the command has been executed successfully.
+
+  ![Default Sort Step 2](images/DefaultSort2.png)
+
 3. All projects are ordered in default ascending alphabetical order with incomplete tasks showing up at the top of the list (Completion status sort is on).
-![Default Sort Step 3](images/DefaultSort3.png)
+
+  ![Default Sort Step 3](images/DefaultSort3.png)
 
 ##### Sorting With Completion Status Toggle
 
 Format: `sort c/`
 
-This toggles the completion status order i.e. if the completion status order is "on", the completion status order is turned "off", vice versa.
+This toggles the completion status order. For example, if the completion status order is `on`, the completion status order is turned `off`, vice versa.
 
 The following walkthrough shows how you can toggle the completion status order in Momentum.
 
-1. Key in command `sort c/` in the command window then press <kbd>Enter</kbd>.
-![Toggle Completion Status Step 1](images/ToggleCompletionStatus1.png)
-Note that currently all projects at the top of the list are incomplete tasks.
-2. The result box will display a message to indicate that the command has been executed successfully:
-![Toggle Completion Status Step 2](images/ToggleCompletionStatus2.png)
+1. Key in command `sort c/` in the command window and press <kbd>Enter</kbd>.
+
+  ![Toggle Completion Status Step 1](images/ToggleCompletionStatus1.png)
+
+  Note that currently all projects at the top of the list are incomplete tasks.
+
+2. The result box will display a message to indicate that the command has been executed successfully.
+
+  ![Toggle Completion Status Step 2](images/ToggleCompletionStatus2.png)
+
 3. All projects are ordered in default ascending alphabetical order without regard for their completion status.
-![Toggle Completion Status Step 3](images/ToggleCompletionStatus3.png)
+
+  ![Toggle Completion Status Step 3](images/ToggleCompletionStatus3.png)
 
 ##### Sorting with Only Type Specified
 
-`order/asc` is assumed if the `order` is not specified.
-Hence, this sorts projects by the specified sort type, in ascending order.
+If you do not specify the sorting order, Momentum will assume that you would like to sort in ascending order.
 
 Format: `sort type/SORT_TYPE`
 
@@ -568,17 +580,24 @@ Example: `sort type/deadline`
 
 The following walkthrough shows how you can sort projects in Momentum by specifying only the sort type.
 
-1. Key in command `sort type/deadline` in the command window then press <kbd>Enter</kbd>.
-![Deadline Sort 1](images/DeadlineSort1.png)
-Note that the projects are not sorted in asceding deadline order.
-2. The result box will display a message to indicate that the command has been executed successfully:
-![Deadline Sort 2](images/DeadlineSort2.png)
+1. Key in command `sort type/deadline` in the command window and press <kbd>Enter</kbd>.
+
+  ![Deadline Sort 1](images/DeadlineSort1.png)
+
+  Note that the projects are not sorted in asceding deadline order.
+
+2. The result box will display a message to indicate that the command has been executed successfully.
+
+  ![Deadline Sort 2](images/DeadlineSort2.png)
+
 3. All projects are ordered in ascending deadline order.
-![Deadline Sort 3](images/DeadlineSort3.png)
+
+  ![Deadline Sort 3](images/DeadlineSort3.png)
 
 ##### Sorting With Only Order Specified
 
 The current sort type is assumed if the `type` is not specified.
+
 If there is no existing project order (when the application restarts), order will be alphabetical by default.
 
 Format: `sort order/SORT_ORDER`
@@ -587,65 +606,70 @@ Example: `sort order/dsc`
 
 The following walkthrough shows how you can sort projects in Momentum by specifying only the sort order.
 
-1. Key in command `sort order/dsc` in the command window then press <kbd>Enter</kbd>.
-![Deadline Sort Descending 1](images/DeadlineDescending1.png)
-Note that currently the projects are sorted in ascending deadline order.
-2. The result box will display a message to indicate that the command has been executed successfully:
-![Deadline Sort Descending 2](images/DeadlineDescending2.png)
+1. Key in command `sort order/dsc` in the command window and press <kbd>Enter</kbd>.
+
+  ![Deadline Sort Descending 1](images/DeadlineDescending1.png)
+
+  Note that currently the projects are sorted in ascending deadline order.
+
+2. The result box will display a message to indicate that the command has been executed successfully.
+
+  ![Deadline Sort Descending 2](images/DeadlineDescending2.png)
+
 3. All projects are ordered in descending deadline order.
-![Deadline Sort Descending 3](images/DeadlineDescending3.png)
+
+  ![Deadline Sort Descending 3](images/DeadlineDescending3.png)
 
 ##### Sorting With Both Type and Order Specified
 
-This sorts projects in the specified type and order.
+This sorts items in the specified type and order.
 
 Example: `sort type/created order/dsc`
 
 The following walkthrough shows how you can sort projects in Momentum by specifying both sort type and order.
 
-1. Key in command `sort type/created order/dsc` in the command window then press <kbd>Enter</kbd>.
-![Created Descending 1](images/CreatedDescending1.png)
-Note that the projects are not sorted by descending created date order.
-2. The result box will display a message to indicate that the command has been executed successfully:
-![Created Descending 2](images/CreatedDescending2.png)
-3. All projects are ordered in descending created date order.
-![Created Descending 3](images/CreatedDescending3.png)
-Note that for projects with the same created date, they are sorted in descending alphabetical order.
+1. Key in command `sort type/created order/dsc` in the command window and press <kbd>Enter</kbd>.
 
-#### Filtering Projects: `find`
+  ![Created Descending 1](images/CreatedDescending1.png)
+
+  Note that the projects are not sorted by descending created date order.
+
+2. The result box will display a message to indicate that the command has been executed successfully.
+
+  ![Created Descending 2](images/CreatedDescending2.png)
+
+3. All projects are ordered in descending created date order.
+
+  ![Created Descending 3](images/CreatedDescending3.png)
+
+  Note that for projects with the same created date, they are sorted in descending alphabetical order.
+
+#### Searching for Items: `find`
 
 Done by Balasubramaniam Praveen
 
-Momentum allows you to make detailed searches for projects or tasks based on a combination of their name, description, tags and completion status. This is done using the find command.
+Momentum allows you to make detailed searches for items based on a combination of their name, description, tags and completion status. This is done using the find command.
 
 Format: `find [match/FILTER_TYPE] [n/NAME [MORE_NAMES]...] [d/DESCRIPTION [MORE_DESCRIPTIONS]...] [t/TAG [MORE_TAGS]...] [c/COMPLETION_STATUS]`
 
-Let us now take a look at how to make simple searches using the find command. Advanced searches that utilize the match parameter will be discussed later. 
+Here are some ways you can make simple searches using the find command. Advanced searches that utilize the match parameter will be [discussed later](#searching-by-multiple-keywords). 
 
 <div markdown="block" class="alert alert-info">
 
-:bulb: **Tip:**
-You can only search for projects in the project view and tasks in the tasks view
+:bulb: You can only search for projects in the project view and tasks in the tasks view
 
 </div>
 
 <div markdown="block" class="alert alert-info">
 
-:bulb: **Tip:**
-Search parameters are not case sensitive.
+:bulb: Search parameters are not case sensitive.
 
-</div>
-
-<div markdown="block" class="alert alert-info">
-
-:bulb: **Tip:**
-The projects/tasks in Momentum will no longer be filtered after the `Add`, `View` or `Home` Commands are used.
-They will continue to be filtered after the `Edit` and `Delete` Commands are used.
 </div>
 
 ##### Searching by Name
 
 * The `n/` command checks whether a project has a certain name. There can be multiple names added to this command. For example, `n/car window` will check for the projects that contain `car` or `window` in their names.
+
 * Searching by name only requires a partial match. This means that a project with the name `carpet` and `car` can potentially be the result of searching for the term `car`.
 
 The following walkthrough shows how you can use the find command to search for projects with `ad` in their names.
@@ -751,7 +775,7 @@ You can use the same method to search for projects by a combination of other par
 
 :bulb: **Tip:**
 If a certain search type is used more than once, the latest entry will be used.
-`find n/a n/b n/c` will only search for projects/tasks that contain`c` in their name.
+`find n/a n/b n/c` will only search for items that contain`c` in their name.
 
 </div>
 
@@ -832,7 +856,7 @@ Format: `list`
 
 The following walkthrough shows how you can list projects or tasks in Momentum.
 
-Suppose you had previously executed a [find command](#filtering-projects-find) and would like to see all your projects again.
+Suppose you had previously executed a [find command](#searching-for-items-find) and would like to see all your projects again.
 
 ![List1](images/List1.png)
 
@@ -897,7 +921,7 @@ On the left side of the window is the Active Timers Panel. This is where Momentu
 ![ActiveTimersUI](images/ActiveTimersUI.png)
 Figure X: Location of the Active Timers Panel.
 
-This panel will show you the name of the project/task, as well as when the timer was started.
+This panel will show you the name of the item, as well as when the timer was started.
 
 #### Time Tracking Example
 
@@ -948,9 +972,9 @@ Done by Cheong Ying Yi Clara
 
 * A reminder will be shown in the reminder panel of the sidebar at the date and time you specified.
 
-* Momentum will remove the reminder in the project/task after it is shown in the sidebar.
+* Momentum will remove the reminder in the item after it is shown in the sidebar.
 
-* If you missed a reminder, it will be greyed out in the project/task.
+* If you missed a reminder, it will be greyed out in the item.
 
 * You can refer to [Walkthrough of Creating a Project](#walkthrough-of-creating-a-project) for more details on how you can add a reminder.
 
@@ -977,7 +1001,7 @@ Format: `undo`
 
 Example: `start 1`, `undo`
 
-Result: Timer for project/task at index 1 is started, then stopped and removed after `undo` is executed.
+Result: Timer for item at index 1 is started, then stopped and removed after `undo` is executed.
 
 The following walkthrough shows how a user can start a timer for a project, then undo the command.
 
@@ -1033,7 +1057,7 @@ Note: The projects are currently sorted in alphabetical, ascending order (defaul
 Done by Farrell Nah Jun Hao
 
 Momentum uses the data collected from your timers (see [time tracking](#time-tracking)) to calculate statistics. These
- statistics are automatically generated and updated whenever you make any changes to your projects and tasks, such as
+ statistics are automatically generated and updated whenever you make any changes to your items, such as
   when you start or stop a new timer.
  These statistics can be seen in a panel on the left side of the window, as shown here:
 
@@ -1072,9 +1096,8 @@ Figure X: Sections of the statistics panel.
 
 The statistics are displayed in 2 different formats:
 
-1. **Pie Chart**: Shows the relative time spent on each project. Useful for comparing different projects and tasks. Projects
- and tasks with less time spent on them may not be shown.
-2. **Table**: Shows the exact (in minutes) amount of time spent on each project. Useful for calculations.
+1. **Pie Chart**: Shows the relative time spent on each item. Useful for comparing different items. Items with less time spent on them may not be shown.
+2. **Table**: Shows the exact (in minutes) amount of time spent on each item. Useful for calculations.
 
 ### Settings
 
@@ -1106,7 +1129,7 @@ Result: Sets a light theme to the GUI and changes the statistics pane to show th
 3. Your GUI has now been set to the light theme, and information in your statistics panel has been updated.
  ![Settings Walkthrough Step 3](images/SettingsDiagram3.png)
 
-### Clear All Projects/Tasks : `clear`
+### Clear All items : `clear`
 
 Done by Farrell Nah Jun Hao
 
@@ -1160,7 +1183,7 @@ Result: The reminder panel of the sidebar will be hidden.
 
 <div markdown="block" class="alert alert-danger">
 
-:warning: Momentum cannot show a reminder that you dismissed in the reminder panel again. You can undo a dismissal to show an expired reminder in the project/task.
+:warning: Momentum cannot show a reminder that you dismissed in the reminder panel again. You can undo a dismissal to show an expired reminder in the item.
 
 </div>
 
@@ -1256,15 +1279,15 @@ Result: Exits the program.
 
 Action | Format | Example
 --------|-------|-----------
-**View tasks in a project**| `view ID` |`view 3`
-**View all projects**| `home` | -
-**Creating a Project/Task** | `add n/NAME [d/DESCRIPTION] [c/] [dd/DEADLINE_DATE [dt/DEADLINE_TIME]] [r/REMINDER_DATE_TIME] [t/TAG]​`|  `project n/Momentum d/CS2103T Team Project dd/2021-12-07 t/impt`
-**Editing a Project/Task** | `edit ID [n/NAME] [d/DESCRIPTION] [c/]  [dd/DEADLINE_DATE [dt/DEADLINE_TIME]] [r/REMINDER_DATE_TIME] [t/TAG]`| `edit 3 n/NewMomentum d/NewDescription dd/2021-12-07 r/2021-12-07T01:21:21 t/normal`
-**Delete a project/task** | `delete ID` | `delete 3`
-**Clear all projects/tasks** | `clear` | -
-**Find a project/task** | `find [match/FILTER_TYPE] [n/NAME [MORE_NAMES]...] [d/DESCRIPTION [MORE_DESCRIPTIONS]...] [t/TAG [MORE_TAGS]...]  [c/COMPLETION_STATUS]`  | `find match/any n/Momentum d/new t/normal`
-**Show all projects/tasks (after find)** | `list` | -
-**Sort projects/tasks** | `sort [type/SORT_TYPE] [order/SORT_ORDER] [c/]` | `sort type/deadline order/dsc c/`
+**View Tasks in a Project**| `view ID` |`view 3`
+**View all Projects**| `home` | -
+**Creating an Item** | `add n/NAME [d/DESCRIPTION] [c/] [dd/DEADLINE_DATE [dt/DEADLINE_TIME]] [r/REMINDER_DATE_TIME] [t/TAG]​`|  `project n/Momentum d/CS2103T Team Project dd/2021-12-07 t/impt`
+**Editing an Item** | `edit ID [n/NAME] [d/DESCRIPTION] [c/]  [dd/DEADLINE_DATE [dt/DEADLINE_TIME]] [r/REMINDER_DATE_TIME] [t/TAG]`| `edit 3 n/NewMomentum d/NewDescription dd/2021-12-07 r/2021-12-07T01:21:21 t/normal`
+**Delete an Item** | `delete ID` | `delete 3`
+**Clear all Items** | `clear` | -
+**Find an Item** | `find [match/FILTER_TYPE] [n/NAME [MORE_NAMES]...] [d/DESCRIPTION [MORE_DESCRIPTIONS]...] [t/TAG [MORE_TAGS]...]  [c/COMPLETION_STATUS]`  | `find match/any n/Momentum d/new t/normal`
+**Show all Items (after find)** | `list` | -
+**Sort Items** | `sort [type/SORT_TYPE] [order/SORT_ORDER] [c/]` | `sort type/deadline order/dsc c/`
 **Start Timer** | `start ID` | `start 2`
 **Stop Timer** | `stop ID` | `stop 2`
 **Dismissing a Reminder** | `dismiss` | -
