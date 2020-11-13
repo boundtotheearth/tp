@@ -6,15 +6,20 @@ title: User Guide
 ![Momentum Logo](images/logo.png)
 <div style="page-break-after: always;"></div>
 
+## Table of Contents
+
 * Table of Contents
 {:toc}
 
 --------------------------------------------------------------------------------------------------------------------
+
+<div style="page-break-after: always;"></div>
+
 ## 1. Introduction
 
 Attention all freelancers, here is an application you have always wanted, but never got to experience!
 
-We freelancers are always busy managing multiple projects at once. On top of that, each project comes with its own tasks and deadlines. This list is endless, but sadly, our brain capacity is exhausive.
+We freelancers are always busy managing multiple projects at once. On top of that, each project comes with its own tasks and deadlines. This list is endless, but sadly, our brain capacity is exhaustive.
 
 As freelancers ourselves, we understand. We too have had times where we woke up feeling fresh, before realising (with a shiver down our spine) that we have completely forgotten about a certain project deadline. 
 
@@ -40,13 +45,14 @@ We present you Momentum, the application that will make sure you never lose your
 
 Momentum is a Command Line Interface (CLI) application equipped with Graphical User Interface (GUI) that is interactive, visually appealing, and easy to use. This means everything within our application can be done with just your keyboard, which provides a user-friendly experience for you. 
 
+<div style="page-break-after: always;"></div>
 ## 2. About this Document
 This user guide provides detailed explanations and walkthroughs on the features available in Momentum. If you wish to learn how to use Momentum, this guide is for you. While reading this document, here are a few things you should take note of.
 
 ### 2.1. Notations Used
 Throughout this document, you will come across these notations:
 
-* **Clickable Links**: Words or phrases that are blue in colour are links which you can click on that will take you over to the section or page as described. For example, clicking on [this](#introduction) will take you back to the introduction of the user guide. 
+* **Clickable Links**: Words or phrases that are blue in colour are links which you can click on that will take you over to the section or page as described. For example, clicking on [this](#1-introduction) will take you back to the introduction of the user guide. 
 
 * **Info Boxes**: These will display additional information that is good for you to know. There are two types of boxes, tip and warning boxes, and they are showed below:
 
@@ -66,6 +72,7 @@ Throughout this document, you will come across these notations:
 
 * **Terminology**: Momentum tracks both your projects and tasks. In this document, if we are referring to both projects and tasks at the same time, we will use the term "item". 
 
+<div style="page-break-after: always;"></div>
 
 ### 2.2. Command Format
 
@@ -92,6 +99,8 @@ You will be presented with multiple commands throughout this document. You may f
 * You need to enter an id which refers to the id number shown in the displayed list.
 
 * You need to enter a **positive number** such as 1, 2, 3, …​
+
+<div style="page-break-after: always;"></div>
 
 ### 2.3. Date and Time Terms
 
@@ -141,6 +150,8 @@ You may also have to enter both dates and times together. When entered together,
 
 **Invalid**: `15:08:02T2020-08-02` Wrong order of date and time.
 
+<div style="page-break-after: always;"></div>
+
 ## 3. Quick Start<a name="quick-start"></a>
 
 1. Ensure you have Java `11` or above installed in your computer.
@@ -181,9 +192,11 @@ You may also have to enter both dates and times together. When entered together,
 
    * `exit` : Exit the app.
 
-Refer to the [Features](#features) below for a more comprehensive set of features available in Momentum.
+Refer to the [Features](#5-features) below for a more comprehensive set of features available in Momentum.
 
 --------------------------------------------------------------------------------------------------------------------
+
+<div style="page-break-after: always;"></div>
 
 ## 4. User Interface Overview
 
@@ -206,15 +219,15 @@ With reference to the numbered labels in Figure 4.1A, these are the GUI componen
 
 3. **Result Box**: This is where Momentum will give you feedback on commands that you execute.
 
-4. **Displayed List**: This is where a list of your items and all the information pertaining to them will be displayed.
+4. **Displayed List**: This is where a list of your items and all the information pertaining to them will be shown.
 
-5. **Reminders Panel**: This is where your [reminders](#reminders) will appear. The panel will only show when you have reminders that have not yet been dismissed.
+5. **Reminders Panel**: This is where your [reminders](#53-reminders) will appear. The panel will only show when you have reminders that have not yet been dismissed.
 
-6. **Active Timers Panel**: This is where a list of all of your running [timers](#active-timers-panel) will be displayed.
+6. **Active Timers Panel**: This is where a list of all of your running [timers](#active-timers-panel) will be shown.
 
-7. **Statistics Panel**: Displays the [statistics](#statistics) of your time usage calculated by Momentum.
+7. **Statistics Panel**: This is where a list of the [statistics](#56-statistics) of your time usage calculated by Momentum will be shown.
 
-8. **Tags Panel**: Shows a collection of all the tags that are currently present in the displayed list.
+8. **Tags Panel**: This is where a collection of all the tags that are currently present in the displayed list will be shown.
 
 9. **Bottom Bar**: Information about what you are currently viewing on the displayed list will be shown here. The left side of the bar tells you which project you are viewing, and the right side of the bar tells you how many items are present on the displayed list, out of the total number of items that you have.  
 
@@ -232,10 +245,10 @@ The GUI of Momentum also comes with two themes, Light and Dark. These themes are
 
 Figure 4.2A: Momentum GUI theme
 
-By default, the theme of Momentum is set to Dark. If you want to adjust the theme, you can do so by changing it in the application [settings](#settings).
+By default, the theme of Momentum is set to Dark. If you want to adjust the theme, you can do so by changing it in the application [settings](#57-settings).
 
-## 5. Features<a name="2-Features"></a>
-### 5.1. Projects and Tasks<a name="3-Projects-and-Tasks"></a>
+## 5. Features
+### 5.1. Projects and Tasks
 
 Done by: Farrell Nah Jun Hao
 
@@ -253,7 +266,7 @@ Apart from the name, all other information is optional.
 
 Each project can also contain several tasks, each with the same information as a project.
 
-When you first open Momentum, you will see all the projects being tracked in Momentum. You can then view the tasks for each project separately using the [view command](#viewing-a-projects-tasks-view).
+When you first open Momentum, you will see all the projects being tracked in Momentum. You can then view the tasks for each project separately using the [view command](#511-viewing-a-projects-tasks-view)
 
 <div markdown="block" class="alert alert-info">
 
@@ -271,7 +284,7 @@ View the tasks for a project.
 
 Format: `view ID`
 
-* You can refer to [Index Term](#index-term) for more information.
+* You can refer to [Index Format](#221-index-format) for more information.
 
 Example: `view 1`
 
@@ -323,7 +336,7 @@ The following walkthrough shows how you can use the home command to go from task
 
 Done by: Cheong Ying Yi Clara
 
-When Momentum is in [project view](#glossary), you can use the add command to create a new project. When Momentum is in [task view](#glossary), you can use the add command to create a new task for the project that you are viewing.
+When Momentum is in [project view](#7-glossary), you can use the add command to create a new project. When Momentum is in [task view](#7-glossary), you can use the add command to create a new task for the project that you are viewing.
 
 Format: `add n/NAME [d/DESCRIPTION] [c/] [dd/DEADLINE_DATE [dt/DEADLINE_TIME]] [r/REMINDER_DATE_TIME] [t/TAG]`
 
@@ -347,9 +360,9 @@ Format: `add n/NAME [d/DESCRIPTION] [c/] [dd/DEADLINE_DATE [dt/DEADLINE_TIME]] [
 
   * You can enter a deadline with date only.
 
-  * You need to enter the date of the deadline using YYYY-MM-DD format. (refer to [Date Terms](#date-terms) for more information on YYYY, MM and DD)
+  * You need to enter the date of the deadline using YYYY-MM-DD format. (refer to [Date Terms](#231-date-terms) for more information on YYYY, MM and DD)
 
-  * You need to enter the time of the deadline using HH:MM:SS format in 24 hours. (refer to [Time Terms](#time-terms) for more information on HH, MM and SS)
+  * You need to enter the time of the deadline using HH:MM:SS format in 24 hours. (refer to [Time Terms](#232-time-terms) for more information on HH, MM and SS)
 
   <div markdown="block" class="alert alert-danger">
 
@@ -361,11 +374,11 @@ Format: `add n/NAME [d/DESCRIPTION] [c/] [dd/DEADLINE_DATE [dt/DEADLINE_TIME]] [
 
   * You need to enter both date and time for a reminder.
 
-  * You need to enter date and time of the reminder using YYYY-MM-DDTHH:MM:SS format. (refer to [Date and Time Terms](#Date-and-Time-Terms) for more information on YYYY, MM, DD, HH, MM, and SS)
+  * You need to enter date and time of the reminder using YYYY-MM-DDTHH:MM:SS format. (refer to [Date and Time Terms](#23-date-and-time-terms) for more information on YYYY, MM, DD, HH, MM, and SS)
 
   <div markdown="block" class="alert alert-danger">
 
-  :warning: You cannot enter a date and time earlier than the current date and time for reminders (refer to [Reminders](#reminders) for more details).
+  :warning: You cannot enter a date and time earlier than the current date and time for reminders (refer to [Reminders](#53-reminders) for more details).
 
   </div>
 
@@ -397,7 +410,7 @@ The following walkthrough shows how you can create a new project in Momentum.
 
 Done by Cheong Ying Yi Clara
 
-When Momentum is in [project view](#glossary), you can use the edit command to edit a project. When Momentum is in [task view](#glossary), you can use the edit command to edit a task for the project that you are viewing.
+When Momentum is in [project view](#7-glossary), you can use the edit command to edit a project. When Momentum is in [task view](#7-glossary), you can use the edit command to edit a task for the project that you are viewing.
 
 Format: `edit ID [n/NAME] [d/DESCRIPTION] [c/] [dd/DEADLINE_DATE [dt/DEADLINE_TIME]] [r/REMINDER_DATE_TIME] [t/TAG]`
 
@@ -413,7 +426,7 @@ Format: `edit ID [n/NAME] [d/DESCRIPTION] [c/] [dd/DEADLINE_DATE [dt/DEADLINE_TI
 
 * `ID`
 
-  * You can refer to [Index Term](#index-term) for more information. <br><br>
+  * You can refer to [Index Format](#221-index-format) for more information. <br><br>
   
 * `n/NAME`
 
@@ -435,15 +448,15 @@ Format: `edit ID [n/NAME] [d/DESCRIPTION] [c/] [dd/DEADLINE_DATE [dt/DEADLINE_TI
 
   * You can enter a deadline with date only.
 
-  * You need to enter the date of the deadline using YYYY-MM-DD format. (refer to [Date Terms](#date-terms) for more information on YYYY, MM and DD)
+  * You need to enter the date of the deadline using YYYY-MM-DD format. (refer to [Date Terms](#231-date-terms) for more information on YYYY, MM and DD)
 
-  * You need to enter the time of the deadline using HH:MM:SS format in 24 hours. (refer to [Time Terms](#time-terms) for more information on HH, MM and SS)
+  * You need to enter the time of the deadline using HH:MM:SS format in 24 hours. (refer to [Time Terms](#232-time-terms) for more information on HH, MM and SS)
 
 * `[r/REMINDER_DATE_TIME]`
 
   * You need to enter both date and time for a reminder.
 
-  * You need to enter date and time of the reminder using YYYY-MM-DDTHH:MM:SS format. (refer to [Date and Time Terms](#Date-and-Time-Terms) for more information on YYYY, MM, DD, HH, MM, and SS)
+  * You need to enter date and time of the reminder using YYYY-MM-DDTHH:MM:SS format. (refer to [Date and Time Terms](#23-date-and-time-terms) for more information on YYYY, MM, DD, HH, MM, and SS)
 
 * `[t/TAG]`
 
@@ -480,7 +493,7 @@ Deletes an item in the list.
 Format: `delete ID`
 
 * Deletes the item at the specified `ID`.
-* You can refer to [Index Term](#index-term) for more information.
+* You can refer to [Index Format](#221-index-format) for more information.
 
 Example: `delete 2`
 
@@ -547,7 +560,7 @@ In addition to the above sort types and orders, the list can be sorted by comple
 
 </div>
 
-**Sorting by Default Order**
+##### 5.1.6a. Sorting by Default Order
 
 Format: `sort`
 
@@ -567,7 +580,7 @@ The following walkthrough shows how you can sort projects in Momentum by the def
 
     ![Default Sort Step 3](images/DefaultSort3.png)
 
-##### 5.1.6a. Sorting with Completion Status Toggle
+##### 5.1.6b. Sorting with Completion Status Toggle
 
 Format: `sort c/`
 
@@ -589,7 +602,7 @@ The following walkthrough shows how you can toggle the completion status order i
 
     ![Toggle Completion Status Step 3](images/ToggleCompletionStatus3.png)
 
-##### 5.1.6b. Sorting with Only Type Specified
+##### 5.1.6c. Sorting with Only Type Specified
 
 If you do not specify the sorting order, Momentum will assume that you would like to sort in ascending order.
 
@@ -603,7 +616,7 @@ The following walkthrough shows how you can sort projects in Momentum by specify
 
     ![Deadline Sort 1](images/DeadlineSort1.png)
 
-    Note that the projects are not sorted in asceding deadline order.
+    Note that the projects are not sorted in ascending deadline order.
 
 2. The result box will display a message to indicate that the command has been executed successfully.
 
@@ -613,7 +626,7 @@ The following walkthrough shows how you can sort projects in Momentum by specify
 
     ![Deadline Sort 3](images/DeadlineSort3.png)
 
-##### 5.1.6c. Sorting with Only Order Specified
+##### 5.1.6d. Sorting with Only Order Specified
 
 The current sort type will be used if the `type` is not specified.
 
@@ -639,7 +652,7 @@ The following walkthrough shows how you can sort projects in Momentum by specify
 
     ![Deadline Sort Descending 3](images/DeadlineDescending3.png)
 
-##### 5.1.6d. Sorting With Both Type and Order Specified
+##### 5.1.6e. Sorting With Both Type and Order Specified
 
 This sorts items in the specified type and order.
 
@@ -671,7 +684,7 @@ Momentum allows you to make detailed searches for items based on a combination o
 
 Format: `find [match/FILTER_TYPE] [n/NAME [MORE_NAMES]...] [d/DESCRIPTION [MORE_DESCRIPTIONS]...] [t/TAG [MORE_TAGS]...] [c/COMPLETION_STATUS]`
 
-Here are some ways you can make simple searches using the find command. Advanced searches will be [discussed later](#searching-by-multiple-parameters). 
+Here are some ways you can make simple searches using the find command. Advanced searches will be [discussed later](#517e-searching-by-multiple-parameters). 
 
 <div markdown="block" class="alert alert-info">
 
@@ -803,7 +816,7 @@ So far, you have learnt how to search for items that contain multiple parameters
 
 Momentum makes it extremely easy for you to do that. 
 
-To make such a search, all you need to do is add all the prefixes you would like to search for in a single find command. You can think of this as combining mulitple find commands together. For example, if you would like to search for items that contain either `certification` in their name or `discussion` in their description, you can do so by searching using the command `find n/certification d/discussion`.
+To make such a search, all you need to do is add all the prefixes you would like to search for in a single find command. You can think of this as combining multiple find commands together. For example, if you would like to search for items that contain either `certification` in their name or `discussion` in their description, you can do so by searching using the command `find n/certification d/discussion`.
 
 The following walkthrough shows you can use the find command to search for projects that contain either `certification` in their name or `discussion` in their description.
 
@@ -903,7 +916,7 @@ The possibilities of using match type to enhance your searches are limitless. He
 
 1. If you have many items and want to find a specific one, you can use `match/all` to narrow down your search results.
 
-2. If you have many items and want to find those that are not part of a certain category, you can use `match/none` to narrrow down your search results.
+2. If you have many items and want to find those that are not part of a certain category, you can use `match/none` to narrow down your search results.
 
 #### 5.1.8. Viewing All Projects/Tasks: `list`
 
@@ -924,7 +937,7 @@ Format: `list`
 
 The following walkthrough shows how you can list projects in Momentum.
 
-Suppose you had previously executed a [find command](#searching-for-items-find) and would like to see all your projects again.
+Suppose you had previously executed a [find command](#517-searching-for-projectstasks-find) and would like to see all your projects again.
 
 ![List1](images/List1.png)
 
@@ -956,7 +969,7 @@ Format: `start ID`
 
 * Only 1 timer can be running for each item at any time.
 
-* You can refer to [Index Term](#index-term) for more information.
+* You can refer to [Index Format](#221-index-format) for more information.
 
 <div markdown="block" class="alert alert-info">
 
@@ -984,7 +997,7 @@ Format: `stop ID`
 
 * A timer can only be stopped if there is one already running.
 
-* You can refer to [Index Term](#index-term) for more information.
+* You can refer to [Index Format](#221-index-format) for more information.
 
 Example: `stop 2`
 
@@ -1033,7 +1046,7 @@ You can perform time tracking with the following steps:
 
     ![TimerExample7](images/TimerExample7.png)
 
-7. The [statistics panel](#statistics) will also be updated to reflect the time that you have spent working on the project.
+7. The [statistics panel](#56-statistics) will also be updated to reflect the time that you have spent working on the project.
 
     ![TimerExample8](images/TimerExample8.png)
 
@@ -1047,7 +1060,7 @@ Done by Cheong Ying Yi Clara
 
 * If you missed a reminder, it will be greyed out in the item.
 
-* You can refer to [Creating a Project](#creating-a-project-task-add) for more details on how you can add a reminder.
+* You can refer to [Creating a Project/Task](#513-creating-a-projecttask-add) for more details on how you can add a reminder.
 
 #### 5.3.1. Dismissing a Reminder : `dismiss`
 
@@ -1067,7 +1080,7 @@ Result: The reminder panel of the sidebar will be hidden.
 
 The following walkthrough shows how you can dismiss a reminder.
 
-This walkthrough is a followup of the walkthrough in [Creating a Project](#creating-a-project-task-add).
+This walkthrough is a followup of the walkthrough in [Creating a Project/Task](#513-creating-a-projecttask-add).
 
 1. After the reminder panel is shown, you can type `dismiss` in the command box, and press the <kbd>Enter</kbd> key to execute it.
 
@@ -1151,7 +1164,7 @@ The redo command reverses the previous undo command that you executed. This allo
 
 Format: `redo`
 
-The following walkthough uses a change in [sort type](#sort-projects-sort) to show how you can redo the changes made by an undo command.
+The following walkthough uses a change in [sort type](#516-sorting-projectstasks--sort) to show how you can redo the changes made by an undo command.
 
 1. Key in command `sort type/deadline` in the command box then press <kbd>Enter</kbd>.
 
@@ -1197,12 +1210,12 @@ The following walkthough uses a change in [sort type](#sort-projects-sort) to sh
 
 Done by Farrell Nah Jun Hao
 
-Momentum uses the data collected from your [timers](#time-tracking) to calculate statistics. These statistics are automatically generated and updated whenever you make any changes to your items, such as when you start or stop a new timer. They can be seen in a panel on the left side of the window, as shown here:
+Momentum uses the data collected from your [timers](#52-time-tracking) to calculate statistics. These statistics are automatically generated and updated whenever you make any changes to your items, such as when you start or stop a new timer. They can be seen in a panel on the left side of the window, as shown here:
 
 ![StatisticsUI1](images/StatsUI1.png)
 Figure 5.6A: Location of the statistics panel
 
-The order of the statistics displayed correspond to the items currently shown in the displayed list, and will automatically change when the items in the displayed list changes (such as when you [find specific items](#searching-for-items-find) or [sort the list of items](#sort-projects-sort)).
+The order of the statistics displayed correspond to the items currently shown in the displayed list, and will automatically change when the items in the displayed list changes (such as when you [find specific items](#517-searching-for-projectstasks-find) or [sort the list of items](#516-sorting-projectstasks--sort)).
 
 ![StatisticsUI2](images/StatsUI2.png)
 Figure 5.6B: The order of the statistics entries matches the order in the displayed list.
@@ -1211,7 +1224,7 @@ You do not need to use any additional commands to update or view the statistics.
 
 #### 5.6.1 Timeframes
 
-Momentum only tracks your statistics within a particular timeframe. You can change the timeframe through the [settings](#settings).
+Momentum only tracks your statistics within a particular timeframe. You can change the timeframe through the [settings](#57-settings).
 
 Momentum allows you to track the time spent within these timeframes:
 
@@ -1241,9 +1254,9 @@ The statistics are displayed in 2 different formats:
 Done by Khoo De Hui
 
 Momentum allows you to change various settings so that you can make the application more suited to your preferences. Currently, the settings which you can adjust are:
-* The application [theme](#user-interface-theme).
+* The application [theme](#42-user-interface-theme).
 
-* The [timeframe](#timeframes) of the statistics shown.
+* The [timeframe](#561-timeframes) of the statistics shown.
 
 Format: `set [th/THEME] [st/TIMEFRAME]`
 
@@ -1309,10 +1322,10 @@ The following walkthrough shows how you can clear all projects in Momentum
 
 ### 5.9. Viewing Help : `help`
 
-Shows a message explaning how to access the help page.
+Shows a message explaining how to access the help page.
 
 ![help message](images/helpMessage.png)
-Figure 5.9A: The help window
+Figure 5.9A: The help window.
 
 Format: `help`
 
@@ -1334,10 +1347,10 @@ Result: Exits the program.
 **A**: Install the app in the other computer and overwrite the empty data file it creates with the file that contains the data of your previous Momentum home folder.
 
 **Q**: Momentum is showing "Dates and Times should be in ISO8601 format. e.g. 2020-09-23T16:55:12". Whats wrong? <br>
-**A**: You have entered a date and/or time in the wrong format. Please refer to the [date and time terms](#date-and-time-terms) for the correct format to use.
+**A**: You have entered a date and/or time in the wrong format. Please refer to the [date and time terms](#23-date-and-time-terms) for the correct format to use.
 
 **Q**: Momentum is showing "Unknown Command". Whats wrong? <br>
-**A**: You have entered a command that is not recognised by Momentum. Please refer to the [command summary](#command-summary) for a list of commands that you can enter into Momentum.
+**A**: You have entered a command that is not recognised by Momentum. Please refer to the [command summary](#8-command-summary) for a list of commands that you can enter into Momentum.
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -1351,7 +1364,7 @@ Result: Exits the program.
 
 * **Theme**: Colour scheme of the application.
 
-* **Window**: The area of your computer's screen that displays the [user interface](#user-interface-overview) of Momentum.
+* **Window**: The area of your computer's screen that displays the [user interface](#4-user-interface-overview) of Momentum.
 
 --------------------------------------------------------------------------------------------------------------------
 
