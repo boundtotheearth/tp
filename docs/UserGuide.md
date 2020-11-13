@@ -867,19 +867,20 @@ Finally, let's look at `match/none`. This match type shows an item only if none 
 
 1. Key in the command `find n/ad d/discussion t/artcomm match/none` in the command window and press <kbd>Enter</kbd>.
 
-  ![Match None Step 1](images/MatchNone1.png)
+   ![Match None Step 1](images/MatchNone1.png)
 
 2. The result box will display a message to indicate that the command has been executed successfully.
 
-  ![Match None Step 2](images/MatchNone2.png)
+   ![Match None Step 2](images/MatchNone2.png)
 
 3. All projects that do not contain `ad` in their name, `discussion` in their description and the tag `artcomm` will be shown.
 
-  ![Match None Step 3](images/MatchNone3.png)
+   ![Match None Step 3](images/MatchNone3.png)
 
 As seen in the example above, an item is only shown if none of the parameters matches it.
 
-The posibilities of using match type to enhance your searches are limitless. Here are some examples where `match/all` and `match/none` may come in handy.
+The possibilities of using match type to enhance your searches are limitless. Here are some examples where `match/all
+` and `match/none` may come in handy.
 
 1. If you have many items and want to find a specific one, you can use `match/all` to narrow down your search results.
 
@@ -896,7 +897,7 @@ When you are viewing a project's tasks, this command shows you a list of all the
 <div markdown="block" class="alert alert-info">
 
 :bulb:
-Note that this command is different from the `home` command. When viewing a project's tasks, the `home` command will change the view to show you all the projects being tracked by Momentum. However, the `list` will only show you all the tasks for the project.
+Note that this command is different from the `home` command. When viewing a project's tasks, the `home` command will change the view to show you all the projects being tracked by Momentum. However, the `list` command will only show you all the tasks for the project.
 
 </div>
 
