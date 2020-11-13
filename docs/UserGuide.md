@@ -8,10 +8,13 @@ title: User Guide
 
 # Table of Contents
 
-* Table of Contents
+Table of Contents
 {:toc}
 
 --------------------------------------------------------------------------------------------------------------------
+
+<div style="page-break-after: always;"></div>
+
 ## 1. Introduction
 
 Attention all freelancers, here is an application you have always wanted, but never got to experience!
