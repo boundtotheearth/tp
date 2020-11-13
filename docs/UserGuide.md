@@ -550,7 +550,7 @@ In addition to the above sort types and orders, the list can be sorted by comple
 
 </div>
 
-##### 5.1.6a. Sorting by Default Order**
+##### 5.1.6a. Sorting by Default Order
 
 Format: `sort`
 
