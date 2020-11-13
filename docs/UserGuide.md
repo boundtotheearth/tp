@@ -6,7 +6,7 @@ title: User Guide
 ![Momentum Logo](images/logo.png)
 <div style="page-break-after: always;"></div>
 
-## Table of Contents
+## 0. Table of Contents
 
 * Table of Contents
 {:toc}
@@ -45,6 +45,8 @@ We present you Momentum, the application that will make sure you never lose your
 
 Momentum is a Command Line Interface (CLI) application equipped with Graphical User Interface (GUI) that is interactive, visually appealing, and easy to use. This means everything within our application can be done with just your keyboard, which provides a user-friendly experience for you. 
 
+<div style="page-break-after: always;"></div>
+
 ## 2. About this Document
 This user guide provides detailed explanations and walkthroughs on the features available in Momentum. If you wish to learn how to use Momentum, this guide is for you. While reading this document, here are a few things you should take note of.
 
@@ -71,6 +73,7 @@ Throughout this document, you will come across these notations:
 
 * **Terminology**: Momentum tracks both your projects and tasks. In this document, if we are referring to both projects and tasks at the same time, we will use the term "item". 
 
+<div style="page-break-after: always;"></div>
 
 ### 2.2. Command Format
 
@@ -97,6 +100,8 @@ You will be presented with multiple commands throughout this document. You may f
 * You need to enter an id which refers to the id number shown in the displayed list.
 
 * You need to enter a **positive number** such as 1, 2, 3, …​
+
+<div style="page-break-after: always;"></div>
 
 ### 2.3. Date and Time Terms
 
@@ -145,6 +150,8 @@ You may also have to enter both dates and times together. When entered together,
 **Valid**: `2020-08-02T15:08:02`
 
 **Invalid**: `15:08:02T2020-08-02` Wrong order of date and time.
+
+<div style="page-break-after: always;"></div>
 
 ## 3. Quick Start<a name="quick-start"></a>
 
