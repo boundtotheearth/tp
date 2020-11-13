@@ -569,7 +569,7 @@ The following walkthrough shows how you can toggle the completion status order i
 
     ![Toggle Completion Status Step 1](images/ToggleCompletionStatus1.png)
 
-  Note that currently all projects at the top of the list are incomplete tasks.
+    Note that currently all projects at the top of the list are incomplete tasks.
 
 2. The result box will display a message to indicate that the command has been executed successfully.
 
@@ -593,7 +593,7 @@ The following walkthrough shows how you can sort projects in Momentum by specify
 
     ![Deadline Sort 1](images/DeadlineSort1.png)
 
-  Note that the projects are not sorted in asceding deadline order.
+    Note that the projects are not sorted in asceding deadline order.
 
 2. The result box will display a message to indicate that the command has been executed successfully.
 
@@ -619,7 +619,7 @@ The following walkthrough shows how you can sort projects in Momentum by specify
 
     ![Deadline Sort Descending 1](images/DeadlineDescending1.png)
 
-  Note that currently the projects are sorted in ascending deadline order.
+    Note that currently the projects are sorted in ascending deadline order.
 
 2. The result box will display a message to indicate that the command has been executed successfully.
 
@@ -641,7 +641,7 @@ The following walkthrough shows how you can sort projects in Momentum by specify
 
     ![Created Descending 1](images/CreatedDescending1.png)
 
-  Note that the projects are not sorted by descending created date order.
+    Note that the projects are not sorted by descending created date order.
 
 2. The result box will display a message to indicate that the command has been executed successfully.
 
@@ -651,7 +651,7 @@ The following walkthrough shows how you can sort projects in Momentum by specify
 
     ![Created Descending 3](images/CreatedDescending3.png)
 
-  Note that for projects with the same created date, they are sorted in descending alphabetical order.
+    Note that for projects with the same created date, they are sorted in descending alphabetical order.
 
 #### 5.1.7. Searching for Items: `find`
 
